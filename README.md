@@ -1,11 +1,11 @@
 ![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
 
-# ARANGS 2015
+# ARANGS 2016
 
 This is the git repository for the course
 *Automated and Reproducible Analysis of Next Generation Sequencing*
-([ARANGS 2015](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS15),
-[timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS15/timetable.html)).
+([ARANGS 2016](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16),
+[timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16/timetable.html)).
 
 This repository contains source code, data, configuration files, documentation and
 reference materials.
