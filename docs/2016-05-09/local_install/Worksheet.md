@@ -10,9 +10,6 @@ We are going to try to run [pipeline.sh](https://github.com/rvosa/arangs2016/blo
 - Are there any libraries missing?
 - If there are missing libraries, try to install these with the package manager (`apt-get`)
 - Make sure the compiled programs are on the `$PATH`.
-```bash
-export PATH="/dir/of/program:${PATH}"
-```
 - Download the data. If you use the download* scripts for this, where will the data end up?
 - Will the pipeline.sh be able to find the data there?
 - Does it matter where you run the pipeline?
