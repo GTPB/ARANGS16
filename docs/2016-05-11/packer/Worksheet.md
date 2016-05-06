@@ -17,8 +17,9 @@ Docker / Packer exercises
 * Try to validate the template (`packer validate template.json`). Is it valid?
 
 There are two ways in which you can have packer build a Vagrant box:
-1. Using `packer push ...`, which sends the build process to a server
-2. Using `packer build ...`, which does it locally.
+ 1. Using `packer push ...`, which sends the build process to a server
+ 2. Using `packer build ...`, which does it locally.
+
 For `push` you need to have an account on a web service that requires you to contact a 
 sales department where a human needs to respond (it's free, but still a hassle). It is 
 somewhat instructive to run `packer build`, i.e. to do it locally, because it will show
