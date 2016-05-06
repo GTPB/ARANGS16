@@ -2,6 +2,8 @@
 
 ## DAY 1
 
+[Worksheet](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/github/Worksheet.md)
+
 ### Introduction
 
 * General introductions
