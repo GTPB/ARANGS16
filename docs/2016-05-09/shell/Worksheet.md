@@ -1,3 +1,5 @@
+Installation worksheet
+
 * Download the raw reads using the script `download_plasmodium_raw.sh`
 * Download the reference genome using the script `download_plasmodium_reference.sh`
 * Make sure you have `bwa` installed and that it is the right version, 
