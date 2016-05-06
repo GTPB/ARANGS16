@@ -1,5 +1,6 @@
 Docker / Packer exercises
 -------------------------
+### Template file
 * Have a look at the [packer template](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json) file.
 * What will be the name of our Vagrant box if we execute this file using packer?
 * Which provisioning tools are specified? 
