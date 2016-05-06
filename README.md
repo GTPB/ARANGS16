@@ -13,13 +13,9 @@ reference materials.
 ## Additional reading of interest
 
 * [_A Quick Guide to Organizing Computational Biology Projects_](http://dx.doi.org/10.1371/journal.pcbi.1000424)
-
 * [_A Quick Guide for Developing Effective Bioinformatics Programming Skills_](http://dx.doi.org/10.1371/journal.pcbi.1000589)
-
 * [_Ten Simple Rules for Managing High-Throughput Nucleotide Sequencing Data_](http://dx.doi.org/10.1101/049338)
-
 * [_Ten Simple Rules for Taking Advantage of git and GitHub_](http://dx.doi.org/10.1101/048744)
-
 * Unix Tutorials: [General intro](http://www.ee.surrey.ac.uk/Teaching/Unix/), [Bash scripting](http://tldp.org/LDP/abs/html/)
 
 <!--
