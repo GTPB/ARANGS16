@@ -92,10 +92,3 @@ into the repo folder and run our pipeline. However, the puppet manifest was run 
 (`sudo puppet apply ...`) so our current user (which is, well, try `whoami` - Who am I?) 
 cannot write to it. You can change ownership with `sudo chown -R vagrant arangs2015`. Then 
 download the data into the VM and run the pipeline.
-
-Requirements
-------------
-
-* [virtualbox](https://www.virtualbox.org/wiki/Downloads)
-* [puppet](https://github.com/puppetlabs/puppet/releases)
-* [vagrant](https://www.vagrantup.com/downloads.html)
