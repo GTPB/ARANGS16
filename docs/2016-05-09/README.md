@@ -53,10 +53,8 @@ explain how it works. We will then work our way through some  [assignments](http
 We will look at a 
 [pipeline](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.sh) in shell 
 script that maps short reads against a reference genome. If we are comfortable with Linux 
-shell commands we should be able to understand what the pipeline does. All fork and clone 
-the course repository and compile and install the tools and data that the pipeline 
-requires (as needed, consult the download scripts in the 
-[bin](https://github.com/rvosa/arangs2016/tree/master/bin) folder).
+shell commands we should be able to understand what the pipeline does. All will have forked 
+and cloned the course repository and will do [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/shell/Worksheet.md).
 
 ### Session 3: First run of the pipeline. 
  
