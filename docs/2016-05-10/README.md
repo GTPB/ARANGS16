@@ -77,13 +77,15 @@ in the vagrant folder.
 
 ### Session 3: Provisioning virtual machines using Puppet. 
  
-We will now have a look at the previously prepared file [conf/vagrant/Vagrantfile](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/Vagrantfile). 
-This file specifies that the VM is to be provisioned using the Puppet manifest that is, relative 
-to the Vagrantfile, in [manifests/default.pp](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/manifests/default.pp). 
-Edit the puppet manifest to add the extra instruction to clone your fork of the course repo 
-into the home directory of the VM user `vagrant`. To test whether you got the puppet syntax right 
-you can do a dry run on the host with `puppet apply --noop manifests/default.pp`. When all seems 
-correct, launch and provision the box using `vagrant up` and log into it with `vagrant ssh`.
+We have now seen that downloading, configuring and launching the right virtual machine image 
+for the right provided (i.e. VirtualBox, in our case) can be managed by Vagrant. The Vagrantfile
+gives us the possibility of sharing the specification of our analytical environment. However,
+this environment is a "fresh" installation of a Linux distribution, so any of the specialized
+tools that we need to do our analyses are missing. The process of automatically installing all
+missing tools is called "provisioning". There are different tools that can be invoked by
+Vagrant to do this. A simple one is to use the UNIX shell directly, but we will use a slightly
+smarter technology called Puppet (there are others, e.g. Chef and Ansible). Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-10/puppet/Worksheet.md)
+in the puppet folder.
 
 ### Session 4: Running the pipeline. 
 
