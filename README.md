@@ -13,7 +13,8 @@ in Oeiras, Portugal.
 * [Course Timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16/timetable.html)
 
 This repository contains source code, data, configuration files, documentation and
-reference materials.
+reference materials. Unless indicated otherwise, all these materials can be reused
+under the terms of the [MIT](https://github.com/rvosa/arangs2016/blob/master/LICENSE) license.
 
 ## Additional reading of interest
 
@@ -71,5 +72,5 @@ https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_Cx
 
 ### Vagrant, virtualbox
 
-- vagrant http://vagrantup.com
-- virtualbox http://virtualbox.org
+* vagrant http://vagrantup.com
+* virtualbox http://virtualbox.org
