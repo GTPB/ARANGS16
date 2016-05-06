@@ -2,7 +2,7 @@
 
 Git
 ===
-[A Brief History](http://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git)
+[A Brief History](http://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git).
 Git was created in 2005 by Linus Torvalds as the main system to manage the source code for the Linux Kernal. Like all source code version control systems, git was primarily designed by software engineers for software engineers. Some of its arcane workflow patterns are meant for complex software projects, where developers need to try lots of different things on the core source of the project in parallel, and then merge in the paths that turned out to be useful. But its core features are useful for researchers wanting to make their research software, and even data, accessible to other researchers.
 
 The Git Workflow
