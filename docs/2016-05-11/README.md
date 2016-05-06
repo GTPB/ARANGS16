@@ -49,8 +49,7 @@ Yesterday we saw how Vagrant and Puppet can automate the creation and configurat
 compute environments and how to run analyses inside a VM. To capture our understanding of 
 yesterday's progress, we will each make a mindmap with XMind. Give it a name that includes 
 your computer (t1, t2, etc.), add the file to your git repository and send us a pull request. 
-This way we have all of them together. Then we will have a brief aside on how to organize 
-data, e.g. as produced by different runs of a pipeline or different steps in a larger analysis.
+This way we have all of them together.
 
 ### Session 2: Sharing Vagrant boxes.
 
