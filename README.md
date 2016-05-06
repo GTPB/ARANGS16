@@ -42,7 +42,6 @@ https://docs.google.com/spreadsheet/ccc?key=0Av8UW3JvZsgcdE9wZW1sYzlCQWFwNjBXLWM
 
 * NGS platforms
 https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_CxCpd4
--->
 
 ## Syntax Format Descriptions
 
@@ -51,19 +50,23 @@ https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_Cx
 * FASTQ http://maq.sourceforge.net/fastq.shtml
 * Sequence file formats http://bioinf.comav.upv.es/courses/sequence_analysis/sequence_file_formats.html
 
-## Executables
+-->
+
+## Tools we will use
+
+### Executables
 
 * samtools http://samtools.sourceforge.net/
 * bwa http://bio-bwa.sourceforge.net/
 * fastqc http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
-## Docker, docker-machine, docker-compose
+### Docker, docker-machine, docker-compose
 
 * docker https://www.docker.com/
 * docker-machine https://docs.docker.com/machine/
 * docker-compose https://docs.docker.com/compose/
 
-## Vagrant, virtualbox
+### Vagrant, virtualbox
 
 - vagrant http://vagrantup.com
 - virtualbox http://virtualbox.org
