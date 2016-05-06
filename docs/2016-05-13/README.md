@@ -4,7 +4,7 @@ ARANGS15
 ========
 Sharing automated, reproducible NGS analyses
 --------------------------------------------
-*2015-05-15*
+*2015-05-13*
 
 On this last day we will tie it all together and practice how to share our analysis
 environments with each other and the world. We have looked at `git` and Github as a way

@@ -4,7 +4,7 @@ ARANGS15
 ========
 Introduction, Installation, Git and Github 101 
 ----------------------------------------------
-*2015-05-11*
+*2015-05-09*
 
 Computationally intensive research, such as genome assembly or other types of analyses in
 Next Generation Sequencing, ought to be reproducible so that other researchers can verify
