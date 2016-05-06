@@ -71,4 +71,5 @@ folder and do the assignments in the worksheet.
 If all tools were installed correctly and the data are there we should be able to run the 
 pipeline. If there are any bugs in the pipeline whose fix the whole class benefits from, 
 commit your corrections to your repository and submit a pull request. To view the produced 
-alignments you can use (for example) [igv](http://www.broadinstitute.org/igv/).
+alignments you can use (for example) [igv](http://www.broadinstitute.org/igv/). (There are
+no assignments: there are probably enough loose ends to deal with anyway before we adjourn.)
