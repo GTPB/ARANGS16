@@ -12,16 +12,22 @@ reference materials.
 
 ## Additional reading of interest
 
-<!--
-* DNA Sequencing Technologies
-http://www.nature.com/scitable/topicpage/DNA-Sequencing-Technologies-690
--->
-
 * [_A Quick Guide to Organizing Computational Biology Projects_](http://dx.doi.org/10.1371/journal.pcbi.1000424)
 
 * [_A Quick Guide for Developing Effective Bioinformatics Programming Skills_](http://dx.doi.org/10.1371/journal.pcbi.1000589)
 
+* Unix Tutorials
+http://tldp.org/LDP/abs/html/
+http://www.ee.surrey.ac.uk/Teaching/Unix/
+
 <!--
+## NGS reference materials
+
+The following are somewhat old and a bit out of scope for the course, but might still be interesting:
+
+* DNA Sequencing Technologies
+http://www.nature.com/scitable/topicpage/DNA-Sequencing-Technologies-690
+
 * "The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants"
 http://dx.doi.org/10.1093%2Fnar%2Fgkp1137
 
@@ -30,17 +36,13 @@ http://dx.doi.org/10.1371/journal.pone.0017915
 
 * "A beginner's guide to eukaryotic genome annotation"
 http://dx.doi.org/10.1038/nrg3174
--->
 
 * NGS glossary spreadsheet
 https://docs.google.com/spreadsheet/ccc?key=0Av8UW3JvZsgcdE9wZW1sYzlCQWFwNjBXLWMtQzZLN3c#gid=0
 
 * NGS platforms
 https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_CxCpd4
-
-* Unix Tutorials
-http://tldp.org/LDP/abs/html/
-http://www.ee.surrey.ac.uk/Teaching/Unix/
+-->
 
 ## Syntax Format Descriptions
 
