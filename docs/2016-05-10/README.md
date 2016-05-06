@@ -68,7 +68,7 @@ then dip our toes into using Virtualbox by installing a tiny Linux distribution 
 [SliTaz](http://www.slitaz.org/en/get/), which we will assign more resources (e.g. 2048Mb 
 RAM and as many processors as are available) using Virtualbox. You can safely remove and 
 destroy this VM while you're playing around or when you're done. We just needed this to see 
-how to install "by hand".
+how to install "by hand". Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-10/virtualization/Worksheet.md) in the virtualization folder.
 
 ### Session 2: Managing virtual machines using Vagrant. 
 
