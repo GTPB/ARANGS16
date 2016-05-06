@@ -46,15 +46,19 @@ added/changed/removed, are we all technically ready for this? How will we teach 
 course, how will we work together, how to provide feedback?
 
 We will explore the [course repository](https://github.com/rvosa/arangs2016) on the web and 
-explain how it works. We will then work our way through some  [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/github/Worksheet.md)
+explain how it works. We will then dive into the 
+[github folder](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-09/github) of 
+the course repository where we will a worksheet with assignments (so, do these), and another
+README file with more background information.
 
 ### Session 2: Setting up a simple pipeline. 
 
 We will look at a 
 [pipeline](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.sh) in shell 
 script that maps short reads against a reference genome. If we are comfortable with Linux 
-shell commands we should be able to understand what the pipeline does. All will have forked 
-and cloned the course repository and will do [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/local_install/Worksheet.md).
+shell commands we should be able to understand what the pipeline does. Go into the
+[local install](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-09/local_install)
+folder and do the assignments in the worksheet.
 
 ### Session 3: First run of the pipeline. 
  
