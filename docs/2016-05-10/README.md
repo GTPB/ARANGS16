@@ -64,23 +64,15 @@ The outline for today is as follows:
 ### Session 1: Virtualization 101. 
  
 We will start with a brief recap of day 1 and deal with any outstanding issues. We will 
-then dip our toes into using Virtualbox by installing a tiny Linux distribution on it, 
-[SliTaz](http://www.slitaz.org/en/get/), which we will assign more resources (e.g. 2048Mb 
-RAM and as many processors as are available) using Virtualbox. You can safely remove and 
-destroy this VM while you're playing around or when you're done. We just needed this to see 
-how to install "by hand". Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-10/virtualization/Worksheet.md) in the virtualization folder.
+then dip our toes into using Virtualbox by installing a tiny Linux distribution on it. 
+We're doing this as a throwaway example to see how virtualization works when we do it
+"by hand" using VirtualBox. Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-10/virtualization/Worksheet.md) in the virtualization folder.
 
 ### Session 2: Managing virtual machines using Vagrant. 
 
 After having seen how to install and configure a Linux distribution by hand we will now learn 
-how to use Vagrant to manage this. Initialize another tiny Linux, this time with Vagrant: 
-`vagrant init olbat/tiny-core-micro`. Edit the Vagrantfile to increase RAM to 2048Mb and
-to turn on the graphical user interface of the VM in Virtualbox. You can do this by 
-removing some comments in the Vagrantfile. In addition, specify `config.ssh.shell="sh"` 
-in the file. You can then start the VM by typing `vagrant up` in the terminal. If it seems
-to hang when creating synced folders you can break out of this with Ctr+C, and then log
-in on the VM using `vagrant ssh`. This VM is again too minimal for us to do something 
-useful with so feel free to destroy it (`vagrant destroy`). Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-10/vagrant/Worksheet.md)
+how to use Vagrant to manage this. We will install another tiny Linux distribution, but this
+time we will manage this process using Vagrant. Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-10/vagrant/Worksheet.md)
 in the vagrant folder.
 
 ### Session 3: Provisioning virtual machines using Puppet. 
