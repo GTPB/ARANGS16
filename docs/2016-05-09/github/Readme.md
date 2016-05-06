@@ -31,14 +31,6 @@ Recently Github has begun directly promoting themself as a [platform for reprodu
 * Free/reduced price academic accounts
 * [Large File Storage](https://github.com/blog/1986-announcing-git-large-file-storage-lfs) to allow researchers to store larger data files within the github change management framework
 
-Lesson Plan:
-------------
-* Create a Free Github Account
-* Tour the github web interface as we learn about the class data and software
-* Fork our Repository
-* clone your forked repository using git
-* set up an ssh key with Github and your class machine
-
 Resources
 ---------
 * https://guides.github.com/
