@@ -51,7 +51,13 @@ explain how it works. We will then dive into the
 the course repository where we will a worksheet with assignments (so, do these), and another
 README file with more background information.
 
-### Session 2: Setting up a simple pipeline. 
+### Session 2: Using git and github locally.
+
+In the previous session we dipped our toes into github but we didn't really look at the
+possibilities locally on the command line. In this session we will do the exercises
+in the [git folder](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-09/git).
+
+### Session 3: Setting up a simple pipeline. 
 
 We will look at a 
 [pipeline](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.sh) in shell 
@@ -60,13 +66,9 @@ shell commands we should be able to understand what the pipeline does. Go into t
 [local install](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-09/local_install)
 folder and do the assignments in the worksheet.
 
-### Session 3: First run of the pipeline. 
+### Session 4: First run of the pipeline. 
  
 If all tools were installed correctly and the data are there we should be able to run the 
 pipeline. If there are any bugs in the pipeline whose fix the whole class benefits from, 
 commit your corrections to your repository and submit a pull request. To view the produced 
 alignments you can use (for example) [igv](http://www.broadinstitute.org/igv/).
-
-### Session 4: Complete running the pipeline. 
-
-Address any questions and confusions that arose during the previous sessions.
