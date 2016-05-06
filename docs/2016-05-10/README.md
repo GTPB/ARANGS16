@@ -77,13 +77,13 @@ in the vagrant folder.
 
 ### Session 3: Provisioning virtual machines using Puppet. 
  
-We will now have a look at the previously prepared file `arangs2015/conf/vagrant/Vagrantfile`. 
+We will now have a look at the previously prepared file [conf/vagrant/Vagrantfile](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/Vagrantfile). 
 This file specifies that the VM is to be provisioned using the Puppet manifest that is, relative 
-to the Vagrantfile, in `manifests/default.pp`. Edit the puppet manifest to add the extra
-instruction to clone your fork of the course repo into the home directory of the VM user
-`vagrant`. To test whether you got the puppet syntax right you can do a dry run on the 
-host with `puppet apply --noop manifests/default.pp`. When all seems correct, launch and
-provision the box using `vagrant up` and log into it with `vagrant ssh`.
+to the Vagrantfile, in [manifests/default.pp](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/manifests/default.pp). 
+Edit the puppet manifest to add the extra instruction to clone your fork of the course repo 
+into the home directory of the VM user `vagrant`. To test whether you got the puppet syntax right 
+you can do a dry run on the host with `puppet apply --noop manifests/default.pp`. When all seems 
+correct, launch and provision the box using `vagrant up` and log into it with `vagrant ssh`.
 
 ### Session 4: Running the pipeline. 
 
