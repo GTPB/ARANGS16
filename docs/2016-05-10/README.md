@@ -61,15 +61,19 @@ Schedule
 
 The outline for today is as follows:
 
-- _Session 1_: Virtualization 101. We will start with a brief recap of day 1 and deal with 
-any outstanding issues. We will then dip our toes into using Virtualbox by installing a 
-tiny Linux distribution on it, [SliTaz](http://www.slitaz.org/en/get/), which we will 
-assign more resources (e.g. 2048Mb RAM and as many processors as are available) using
-Virtualbox. You can safely remove and destroy this VM while you're playing around or when 
-you're done. We just needed this to see how to install "by hand".
-- _Session 2_: Managing virtual machines using Vagrant. After having seen how to install
-and configure a Linux distribution by hand we will now learn how to use Vagrant to manage
-this. Initialize another tiny Linux, this time with Vagrant: 
+### Session 1: Virtualization 101. 
+ 
+We will start with a brief recap of day 1 and deal with any outstanding issues. We will 
+then dip our toes into using Virtualbox by installing a tiny Linux distribution on it, 
+[SliTaz](http://www.slitaz.org/en/get/), which we will assign more resources (e.g. 2048Mb 
+RAM and as many processors as are available) using Virtualbox. You can safely remove and 
+destroy this VM while you're playing around or when you're done. We just needed this to see 
+how to install "by hand".
+
+### Session 2: Managing virtual machines using Vagrant. 
+
+After having seen how to install and configure a Linux distribution by hand we will now learn 
+how to use Vagrant to manage this. Initialize another tiny Linux, this time with Vagrant: 
 `vagrant init olbat/tiny-core-micro`. Edit the Vagrantfile to increase RAM to 2048Mb and
 to turn on the graphical user interface of the VM in Virtualbox. You can do this by 
 removing some comments in the Vagrantfile. In addition, specify `config.ssh.shell="sh"` 
@@ -77,20 +81,24 @@ in the file. You can then start the VM by typing `vagrant up` in the terminal. I
 to hang when creating synced folders you can break out of this with Ctr+C, and then log
 in on the VM using `vagrant ssh`. This VM is again too minimal for us to do something 
 useful with so feel free to destroy it (`vagrant destroy`).
-- _Session 3_: Provisioning virtual machines using Puppet. We will now have a look at the
-previously prepared file `arangs2015/conf/vagrant/Vagrantfile`. This file specifies that
-the VM is to be provisioned using the Puppet manifest that is, relative to the 
-Vagrantfile, in `manifests/default.pp`. Edit the puppet manifest to add the extra
+
+### Session 3: Provisioning virtual machines using Puppet. 
+ 
+We will now have a look at the previously prepared file `arangs2015/conf/vagrant/Vagrantfile`. 
+This file specifies that the VM is to be provisioned using the Puppet manifest that is, relative 
+to the Vagrantfile, in `manifests/default.pp`. Edit the puppet manifest to add the extra
 instruction to clone your fork of the course repo into the home directory of the VM user
 `vagrant`. To test whether you got the puppet syntax right you can do a dry run on the 
 host with `puppet apply --noop manifests/default.pp`. When all seems correct, launch and
 provision the box using `vagrant up` and log into it with `vagrant ssh`.
-- _Session 4_: Running the pipeline. If the course repo was successfully cloned into the 
-VM by puppet we should be able to navigate into the repo folder and run our pipeline. 
-However, the puppet manifest was run as root (`sudo puppet apply ...`) so our current user 
-(which is, well, try `whoami` - Who am I?) cannot write to it. You can change ownership 
-with `sudo chown -R vagrant arangs2015`. Then download the data into the VM and run the 
-pipeline.
+
+### Session 4: Running the pipeline. 
+
+If the course repo was successfully cloned into the VM by puppet we should be able to navigate 
+into the repo folder and run our pipeline. However, the puppet manifest was run as root 
+(`sudo puppet apply ...`) so our current user (which is, well, try `whoami` - Who am I?) 
+cannot write to it. You can change ownership with `sudo chown -R vagrant arangs2015`. Then 
+download the data into the VM and run the pipeline.
 
 Requirements
 ------------
