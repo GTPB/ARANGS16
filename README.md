@@ -2,8 +2,13 @@
 
 # ARANGS 2016
 
-This is the git repository for the course
-*Automated and Reproducible Analysis of Next Generation Sequencing*
+This is the git repository for the course *Automated and Reproducible Analysis of Next 
+Generation Sequencing data* (ARANGS16). This course is organized by 
+[Pedro Fernandes](https://github.com/pfern) and taught by [Darin London](https://github.com/dmlond),
+[Hannes Hettling](http://github.com/hettling) and [Rutger Vos](https://github.com/rvosa) under the 
+auspices of the [Gulbenkian Training Programme in Bioinformatics](http://gtpb.igc.gulbenkian.pt/bicourses/)
+in Oeiras, Portugal.
+
 * [Course Homepage](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16)
 * [Course Timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16/timetable.html)
 
