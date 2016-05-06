@@ -4,16 +4,19 @@
 
 ### Introduction
 
-Presentations & expectations.
+* General introductions
+* Expectations
+* Course structure
+* Teaching / learning approach
 
-### Versioning: setting up git & github
+### Getting the course files
 
-[Instructions](https://github.com/rioualen/arangs2015/tree/master/docs/2015-05-11/github)
+* [Instructions](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-11/github)
+* [The course repository](https://github.com/rvosa/arangs2016)
+* [What's the difference between cloning and forking?](http://stackoverflow.com/questions/6286571/git-fork-is-git-clone)
 
-* Forking the course files: [here](https://github.com/dmlond/arangs2015)
-* What's the difference between cloning and forking?
-    > See [stackoverflow](http://stackoverflow.com/questions/6286571/git-fork-is-git-clone)
-* ssh connection to github:
+### SSH connection to github
+*
     > [Link](https://github.com/settings/ssh)
 
     ```ssh-keygen -t rsa```
