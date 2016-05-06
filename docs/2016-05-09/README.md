@@ -68,10 +68,3 @@ alignments you can use (for example) [igv](http://www.broadinstitute.org/igv/).
 ### Session 4: Complete running the pipeline. 
 
 Address any questions and confusions that arose during the previous sessions.
-
-Requirements
-------------
-
-- A [github](http://github.com) account
-- [git](http://git-scm.com/downloads)
-- any tools and data needed by the pipeline
