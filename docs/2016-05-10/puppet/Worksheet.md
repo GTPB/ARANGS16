@@ -3,7 +3,7 @@ Launching and provisioning a usable Linux with Vagrant and Puppet
 
 ![tahr](http://www.exclusiveadventuresnz.com/images/hunting/big-game/bull-tahr/bull-tahr-banner1.jpg)
 
-- Have a look at this edited [Vagrantfile](https://github.com/dmlond/arangs2015/blob/master/conf/vagrant/Vagrantfile)
+- Have a look at this edited [Vagrantfile](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/Vagrantfile)
 - Which Linux distribution is specified in this file? Can you find it in the vagrant cloud? Is this a common distribution? 
 How does it compare to the operating system of your host desktop? Are there likely to be guest additions for this
 distribution?
@@ -18,7 +18,7 @@ example of provisioning using shell commands in the Vagrantfile. Which provision
     sudo apt-get -y install puppet
 ```
 
-- Now have a look at [this provisioning script](https://github.com/dmlond/arangs2015/blob/master/conf/vagrant/manifests/default.pp).
+- Now have a look at [this provisioning script](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/manifests/default.pp).
 - What would the instructions after `dl_bwa` (line 35) do?
 - What immediately preceding steps does `untar_bwa` require?
 - What is the Current Working Directory (`cwd`) where BWA is unzipped?
