@@ -27,38 +27,47 @@ accomplish the following learning goals:
 - The open source culture and github
 - Course Github repositories
 - Forking our repositories to make your own copy
+- Cloning repositories
+- Local and remote repositories
 - Using forks as a proxy for 'citations' of code
 - Following our repositories
 - Pulling changes from our repositories
 - Submitting Pull Requests (sharing back)
-- Cloning repositories
-- Local and remote repositories
 - .gitignore and secrets
 - The Git Workflow
 
 Schedule
 --------
 
-The outline for today is as follows:
+### Session 1: Introductions. 
 
-- _Session 1_: Introductions. Expectation management: what do we expect from the course,
-what could be added/changed/removed, are we all technically ready for this? We will 
-explore the [course repository](https://github.com/rvosa/arangs2016) on the web and 
-explain how it works. All create accounts on Github.com and install `git` if needed.
-- _Session 2_: A simple pipeline. We will look at a 
+Expectation management: what do we expect from the course, what could be 
+added/changed/removed, are we all technically ready for this? How will we teach the 
+course, how will we work together, how to provide feedback?
+
+We will explore the [course repository](https://github.com/rvosa/arangs2016) on the web and 
+explain how it works. We will then work our way through the first [Worksheet](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/github/Worksheet.md)
+
+### Session 2: A simple pipeline. 
+
+We will look at a 
 [pipeline](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.sh) in shell 
 script that maps short reads against a reference genome. If we are comfortable with Linux 
 shell commands we should be able to understand what the pipeline does. All fork and clone 
 the course repository and compile and install the tools and data that the pipeline 
 requires (as needed, consult the download scripts in the 
 [bin](https://github.com/rvosa/arangs2016/tree/master/bin) folder).
-- _Session 3_: First run of the pipeline. If all tools were installed correctly and the
-data are there we should be able to run the pipeline. If there are any bugs in the 
-pipeline whose fix the whole class benefits from, commit your corrections to your 
-repository and submit a pull request. To view the produced alignments you can use (for
-example) [igv](http://www.broadinstitute.org/igv/).
-- _Session 4_: Complete running the pipeline. Address any questions and confusions that
-arose during the previous sessions.
+
+### Session 3: First run of the pipeline. 
+ 
+If all tools were installed correctly and the data are there we should be able to run the 
+pipeline. If there are any bugs in the pipeline whose fix the whole class benefits from, 
+commit your corrections to your repository and submit a pull request. To view the produced 
+alignments you can use (for example) [igv](http://www.broadinstitute.org/igv/).
+
+### Session 4: Complete running the pipeline. 
+
+Address any questions and confusions that arose during the previous sessions.
 
 Requirements
 ------------
