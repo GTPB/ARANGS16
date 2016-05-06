@@ -51,15 +51,14 @@ yesterday's progress, we will each make a mindmap with XMind. Give it a name tha
 your computer (t1, t2, etc.), add the file to your git repository and send us a pull request. 
 This way we have all of them together.
 
-### Session 2: Sharing Vagrant boxes.
+### Session 2: Building Vagrant boxes.
 
 We are going to make our own vagrant box file to share with others. The end
 result will be something [like this](https://atlas.hashicorp.com/Naturalis/boxes/arangs2015),
 which you can install with `vagrant init Naturalis/arangs2015` (etc.). A box file
 is [a combination of the virtual hard drive of the VM and metadata](http://docs.vagrantup.com/v2/boxes/format.html).
-This bundling is made using the [packer program](https://packer.io/), which you should install.
-The bundler requires some extra scripts and config files, which we will adapt from
-[here](https://github.com/hashicorp/atlas-packer-vagrant-tutorial).
+Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/packer/Worksheet.md) 
+in the packer folder to build a Vagrant box.
 
 ### Session 3: Docker introduction. 
 
