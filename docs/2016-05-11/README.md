@@ -65,7 +65,9 @@ in the packer folder to build a Vagrant box.
 We will now begin to look at a newer technology that has emerged within the last few years, Docker.  
 In this session, we will go over the basic concepts of the Docker system, and get to know its
 similarities and differences with Virtualization.  We will then learn about the docker ecosystem on 
-registry.docker.hub. We will then install the software we will be using in the class.
+registry.docker.hub. We will then install the software we will be using in the class. Start
+with the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/intro_docker/Worksheet.md)
+in the docker folder (and finish them after the tea break).
 
 ### Session 4: Docker Machine, and Docker Commandline.  
 
