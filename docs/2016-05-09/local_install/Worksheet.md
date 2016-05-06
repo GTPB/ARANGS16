@@ -1,3 +1,6 @@
+Local installation worksheet
+----------------------------
+
 We are going to try to run [pipeline.sh](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.sh). Have a look at the script.
 
 - How many values does the `$FASTQS` variable hold?
