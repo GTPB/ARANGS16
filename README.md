@@ -4,8 +4,8 @@
 
 This is the git repository for the course
 *Automated and Reproducible Analysis of Next Generation Sequencing*
-([ARANGS 2016](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16),
-[timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16/timetable.html)).
+* [Course Homepage](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16)
+* [Course Timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16/timetable.html)
 
 This repository contains source code, data, configuration files, documentation and
 reference materials.
