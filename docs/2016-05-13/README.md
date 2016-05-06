@@ -32,4 +32,36 @@ complete solution, that includes packaging and hosting, is provided by
 
 For Docker images there is similar functionality provided by
 [Docker hub](https://hub.docker.com): hosting of images, including even a facility
-to search useful images using `docker search`.  You can even host your own images for free!
+to search useful images using `docker search`. You can even host your own images for free!
+We will see how Docker hub and Github can be integrated such that new builds of a docker image
+can be triggered from within Github.
+
+Last, we will have a look at [Kitematic](https://kitematic.com/), a convenient software for
+searching, downloading and managing public Docker images hub and for running containers.
+
+Schedule
+--------
+
+### Session 1: Vagrant in the cloud
+We will explore repositories for web-hosted vagrant boxes
+and push our own vagrant box to [Atlas](https://atlas.hashicorp.com/).
+This way, you can share your own analysis environment with the world.
+
+### Session 2: Docker in the cloud and automated builds
+We will push a Docker image to [Docker hub](https://hub.docker.com)/[Docker cloud](https://cloud.docker.com)
+and explore the possibilities of building images remotely (on the Docker hub servers).
+After succeeding to run a remote build from a remote Dockerfile, we will try
+different possibilities of triggering remote builds, e.g. via commits or version
+releases in a Git hub repository.
+
+### Session 3: Kitematic
+The goal is to get aquainted with the [Kitematic](https://kitematic.com/) software,
+an 'App store' for downloading and running public Docker images. We will run a docker container from
+our remote image and will discuss
+benefits and limitations of this GUI version of Docker.
+
+### Session 4: Wrap-up
+We will discuss how your research can profit from generating reproducible workflows
+with virtualization software. To what extent will you use the tools that
+you were introduced to in the last week? Which programs do you feel most comfortable
+with? How can you structure joint projects with colleagues to make collaboration efficient?
