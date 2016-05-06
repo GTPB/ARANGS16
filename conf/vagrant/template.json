@@ -1,6 +1,6 @@
 {
     "push": {
-      "name": "Naturalis/arangs2015"
+      "name": "Naturalis/arangs2016"
     },
     "variables": {
         "atlas_username": "{{env `ATLAS_USERNAME`}}",
@@ -63,7 +63,7 @@
         {
             "type": "atlas",
             "only": ["virtualbox-iso"],
-            "artifact": "Naturalis/arangs2015",
+            "artifact": "Naturalis/arangs2016",
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
