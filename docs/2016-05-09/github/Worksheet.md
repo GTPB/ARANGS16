@@ -21,8 +21,8 @@ GitHub Worksheet
   - What is its history?
 * Go back to the repository root
   - What is the git clone url for the repository?
-    https https://github.com/dmlond/arangs2015.git
-    ssh git@github.com:dmlond/arangs2015.git
+    - https https://github.com/dmlond/arangs2015.git
+    - ssh git@github.com:dmlond/arangs2015.git
     (Use the ssh one to push stuff back!)
 * Fork our Repository
 * Check to make sure the `git` executable is available. If not, install it, e.g. `sudo yum install git`
