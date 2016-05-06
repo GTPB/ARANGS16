@@ -1,10 +1,10 @@
 ![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
 
-ARANGS15
+ARANGS16
 ========
 Virtualization and provision with Virtualbox and puppet
 -------------------------------------------------------
-*2015-05-10*
+*2016-05-10*
 
 On the previous day we learned how to track changes in, and collaborate on, text files 
 using `git` and Github. We would now be able to share analysis scripts, configuration

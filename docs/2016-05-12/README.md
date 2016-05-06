@@ -1,10 +1,10 @@
 ![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
 
-ARANGS15
+ARANGS16
 ========
 Building and composing docker images
 ----------------------------------------
-*2015-05-12*
+*2016-05-12*
 
 On the previous day we learnt that docker images are a more efficient way to package applications and data.  Today we will get a better understanding of how
 to use this efficiency for our own purposes.  We will be building our own docker

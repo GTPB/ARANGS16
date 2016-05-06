@@ -1,10 +1,10 @@
 ![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
 
-ARANGS15
+ARANGS16
 ========
 Introduction, Installation, Git and Github 101 
 ----------------------------------------------
-*2015-05-09*
+*2016-05-09*
 
 Computationally intensive research, such as genome assembly or other types of analyses in
 Next Generation Sequencing, ought to be reproducible so that other researchers can verify
@@ -43,15 +43,15 @@ The outline for today is as follows:
 
 - _Session 1_: Introductions. Expectation management: what do we expect from the course,
 what could be added/changed/removed, are we all technically ready for this? We will 
-explore the [course repository](https://github.com/dmlond/arangs2015) on the web and 
+explore the [course repository](https://github.com/rvosa/arangs2016) on the web and 
 explain how it works. All create accounts on Github.com and install `git` if needed.
 - _Session 2_: A simple pipeline. We will look at a 
-[pipeline](https://github.com/dmlond/arangs2015/blob/master/bin/pipeline.sh) in shell 
+[pipeline](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.sh) in shell 
 script that maps short reads against a reference genome. If we are comfortable with Linux 
 shell commands we should be able to understand what the pipeline does. All fork and clone 
 the course repository and compile and install the tools and data that the pipeline 
 requires (as needed, consult the download scripts in the 
-[bin](https://github.com/dmlond/arangs2015/tree/master/bin) folder).
+[bin](https://github.com/rvosa/arangs2016/tree/master/bin) folder).
 - _Session 3_: First run of the pipeline. If all tools were installed correctly and the
 data are there we should be able to run the pipeline. If there are any bugs in the 
 pipeline whose fix the whole class benefits from, commit your corrections to your 

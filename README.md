@@ -10,16 +10,23 @@ This is the git repository for the course
 This repository contains source code, data, configuration files, documentation and
 reference materials.
 
-## Reference materials
+## Additional reading of interest
+
+* [_A Quick Guide to Organizing Computational Biology Projects_](http://dx.doi.org/10.1371/journal.pcbi.1000424)
+
+* [_A Quick Guide for Developing Effective Bioinformatics Programming Skills_](http://dx.doi.org/10.1371/journal.pcbi.1000589)
+
+* Unix Tutorials
+http://tldp.org/LDP/abs/html/
+http://www.ee.surrey.ac.uk/Teaching/Unix/
+
+<!--
+## NGS reference materials
+
+The following are somewhat old and a bit out of scope for the course, but might still be interesting:
 
 * DNA Sequencing Technologies
 http://www.nature.com/scitable/topicpage/DNA-Sequencing-Technologies-690
-
-* "A Quick Guide to Organizing Computational Biology Projects"
-http://dx.doi.org/10.1371/journal.pcbi.1000424
-
-* "A quick guide for developing effective bioinformatics programming skills."
-http://dx.doi.org/10.1371/journal.pcbi.1000589
 
 * "The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants"
 http://dx.doi.org/10.1093%2Fnar%2Fgkp1137
@@ -36,10 +43,6 @@ https://docs.google.com/spreadsheet/ccc?key=0Av8UW3JvZsgcdE9wZW1sYzlCQWFwNjBXLWM
 * NGS platforms
 https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_CxCpd4
 
-* Unix Tutorials
-http://tldp.org/LDP/abs/html/
-http://www.ee.surrey.ac.uk/Teaching/Unix/
-
 ## Syntax Format Descriptions
 
 * SAM/BAM http://samtools.sourceforge.net/SAM1.pdf
@@ -47,19 +50,23 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/
 * FASTQ http://maq.sourceforge.net/fastq.shtml
 * Sequence file formats http://bioinf.comav.upv.es/courses/sequence_analysis/sequence_file_formats.html
 
-## Executables
+-->
+
+## Tools we will use
+
+### Executables
 
 * samtools http://samtools.sourceforge.net/
 * bwa http://bio-bwa.sourceforge.net/
 * fastqc http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
-## Docker, docker-machine, docker-compose
+### Docker, docker-machine, docker-compose
 
 * docker https://www.docker.com/
 * docker-machine https://docs.docker.com/machine/
 * docker-compose https://docs.docker.com/compose/
 
-## Vagrant, virtualbox
+### Vagrant, virtualbox
 
 - vagrant http://vagrantup.com
 - virtualbox http://virtualbox.org
