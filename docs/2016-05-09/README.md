@@ -46,9 +46,9 @@ added/changed/removed, are we all technically ready for this? How will we teach 
 course, how will we work together, how to provide feedback?
 
 We will explore the [course repository](https://github.com/rvosa/arangs2016) on the web and 
-explain how it works. We will then work our way through the first [Worksheet](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/github/Worksheet.md)
+explain how it works. We will then work our way through some  [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/github/Worksheet.md)
 
-### Session 2: A simple pipeline. 
+### Session 2: Setting up a simple pipeline. 
 
 We will look at a 
 [pipeline](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.sh) in shell 
