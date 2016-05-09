@@ -6,7 +6,7 @@ Local git exercises
 - Use git to show information about the commit history for the project _git log ._
 - Show information about files changed during the commits _git log --name-only_
 - Show information about files changed, with the status of each change for
-commit 6aac7ffd516dc18b729a7f2c932633c76a5aeed8 (try 6aac7ff)
+commit 6aac7ffd516dc18b729a7f2c932633c76a5aeed8 (try 6aac7ff) _git show 4c4ff5ece4_
 - Add a file to the repository (use your favorite text editor)
 - Use `git status` to find out the state of the repository
 - Try `git status --porcelain`
