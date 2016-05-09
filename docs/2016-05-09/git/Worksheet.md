@@ -7,22 +7,22 @@ Local git exercises
 - Show information about files changed during the commits _git log --name-only_
 - Show information about files changed, with the status of each change for
 commit 6aac7ffd516dc18b729a7f2c932633c76a5aeed8 (try 6aac7ff) _git show 4c4ff5ece4_
-- Add a file to the repository (use your favorite text editor)
+- Add a file to the repository (use your favorite text editor) _e.g. `touch foo` inside the arangs2016 folder_
 - Use `git status` to find out the state of the repository
 - Try `git status --porcelain`
-- What if you didnt like this file, how could you get rid of it (dont do it)?
-- Stage this file change
+- What if you didnt like this file, how could you get rid of it (dont do it)? _unstaged: simply delete it_
+- Stage this file change _git add foo_
 - What do git status, and `git status --porcelain` show
-- How could you get rid of this file now? Go ahead and fully delete the file.
+- How could you get rid of this file now? Go ahead and fully delete the file.  _git reset HEAD foo && rm foo_
 - Create a new file, and make sure it gets committed to the repository
-- What remote git repositories does your git repository know about?
-- Push your new changes to the file up to your github repository
+- What remote git repositories does your git repository know about? _git remote -v_
+- Push your new changes to the file up to your github repository _git push_
 - Find the newly committed file in your github repository.  Edit it using
 Github and make a change.
 - Go back to the commandline and use git to `pull` these changes
 - Unix `rm` the file you created.
-- What do `git status` and `git status --porcelain` show?
-- Can you get it back?
+- What do `git status` and `git status --porcelain` show? _deleted_
+- Can you get it back? _git checkout foo_
 - `rm` it again, then stage the removal.
 - Get it back again
 - `git rm` the file.  How is this different than using unix `rm`?
