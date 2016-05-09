@@ -5,8 +5,8 @@ GitHub Worksheet
 * Go to the [arangs2016](https://github.com/rvosa/arangs2016) repository
   - Does it have an Open Source License? _yes: the MIT license_
   - Who owns the Repository? _rvosa_
-  - How many people have forked the repository? _It depends when we look... There will be more forks later._
-  - How many contributors are working on this repository? _Again, depends, will increase later_
+  - How many people have forked the repository? _It depends when we look... There will be more forks later. See: https://github.com/rvosa/arangs2016/network_
+  - How many contributors are working on this repository? _Again, depends, will increase later. See: https://github.com/rvosa/arangs2016/graphs/contributors_
   - Who are they? _All of us_
   - How many commits have been made? _101_
   - Who made the latest commit? _rvosa_
