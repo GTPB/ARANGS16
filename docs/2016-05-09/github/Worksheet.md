@@ -11,8 +11,8 @@ GitHub Worksheet
   - How many commits have been made? _101_
   - Who made the latest commit? _rvosa_
 * Take a look at the data directory.
-  - Where did we get the data that we analyze for our pipeline?
-  - Do we make it easy for you to download the same data that we used?
+  - Where did we get the data that we analyze for our pipeline? _From ftp://ftp.sra.ebi.ac.uk and ftp://ftp.sanger.ac.uk_
+  - Do we make it easy for you to download the same data that we used? _The README.md talks about download scripts, so yes...?_
 * Go back to the bin directory
   - What is consistently found in each directory? _README.md_
   - View the pipeline.sh file
