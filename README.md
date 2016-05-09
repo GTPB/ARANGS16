@@ -22,6 +22,7 @@ under the terms of the [MIT](https://github.com/rvosa/arangs2016/blob/master/LIC
 * [_A Quick Guide for Developing Effective Bioinformatics Programming Skills_](http://dx.doi.org/10.1371/journal.pcbi.1000589)
 * [_Ten Simple Rules for Managing High-Throughput Nucleotide Sequencing Data_](http://dx.doi.org/10.1101/049338)
 * [_Ten Simple Rules for Taking Advantage of git and GitHub_](http://dx.doi.org/10.1101/048744)
+* [_The Case for Cloud Computing in Genome Informatics_](http://dx.doi.org/10.1186/gb-2010-11-5-207)
 * Unix Tutorials: [General intro](http://www.ee.surrey.ac.uk/Teaching/Unix/), [Bash scripting](http://tldp.org/LDP/abs/html/)
 
 <!--
