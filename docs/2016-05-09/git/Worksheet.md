@@ -2,7 +2,7 @@ Local git exercises
 -------------------
 
 - Create a ~/.gitconfig file with our [example](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/git/example_gitconfig) _i.e. create an invisible file in your home directory, paste the example into it and enter your name and email address in the appropriate location_
-- Clone your personal fork of our repository onto your machine, choose the SSH clone url
+- Clone your personal instance of our repository onto your machine, choose the SSH clone url
 - Use git to show information about the commit history for the project
 - Show information about files changed during the commits
 - Show information about files changed, with the status of each change for
