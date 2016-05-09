@@ -2,11 +2,11 @@ Local git exercises
 -------------------
 
 - Create a ~/.gitconfig file with our [example](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-09/git/example_gitconfig) _i.e. create an invisible file in your home directory, paste the example into it and enter your name and email address in the appropriate location_
-- Clone your personal fork of our repository onto your machine, choose the SSH clone url
-- Use git to show information about the commit history for the project
-- Show information about files changed during the commits
+- Clone your personal instance of our repository onto your machine, choose the SSH clone url
+- Use git to show information about the commit history for the project _git log ._
+- Show information about files changed during the commits _git log --name-only_
 - Show information about files changed, with the status of each change for
-commit 4c4ff5ece4c3132c6fa29f3e826e3272686c78e0 (try 4c4ff5ece4)
+commit 6aac7ffd516dc18b729a7f2c932633c76a5aeed8 (try 6aac7ff) _git show 4c4ff5ece4_
 - Add a file to the repository (use your favorite text editor)
 - Use `git status` to find out the state of the repository
 - Try `git status --porcelain`
