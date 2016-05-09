@@ -23,12 +23,12 @@ Github and make a change.
 - Unix `rm` the file you created.
 - What do `git status` and `git status --porcelain` show? _deleted_
 - Can you get it back? _git checkout foo_
-- `rm` it again, then stage the removal.
-- Get it back again
-- `git rm` the file.  How is this different than using unix `rm`?
+- `rm` it again, then stage the removal. _rm foo && git rm foo_
+- Get it back again _git reset HEAD foo && git checkout foo_
+- `git rm` the file.  How is this different than using unix `rm`? _both delete and stage_
 - Commit the removal of the file, and push the changes up to Github
 - Use the Github Web interface to inspect changes for this file.  Can you
 still find the contents of the file in Github?  Do you think it is a
-good idea to store usernames and passwords in publicly available GitHub accounts?
+good idea to store usernames and passwords in publicly available GitHub accounts? _It's still there, so don't store sensitive data on github_
 - Edit one of the files, but do not add the changes.  Create a branch called 'try_bowtie'.  Use git status to find out the state of the repo.  Add and commit
 your changes to the branch.  Use git to find out all the branches you have made (you might see branches pulled in when you forked the repository from someone else).  Change to the master branch.  Use git status to find out the state of the repository.  Can you find your changes?  Switch back to the 'try_bowtie' branch.  Can you find your changes now?  Switch back to the master branch.  Merge try_bowtie in to the master branch.  Use git status to find the status of the master branch. Commit and push these changes to Github.  Use the Github web interface to find out if the branch was pushed. Remove the 'try_bowtie' branch from your repository.
