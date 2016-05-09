@@ -1,6 +1,6 @@
 ![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
 
-ARANGS15
+ARANGS16
 ========
 Data folder
 -----------
