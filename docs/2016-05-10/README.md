@@ -68,7 +68,7 @@ Schedule
 
 The outline for today is as follows:
 
-### Session 1: Virtualization 101. 
+### Session 1: Entry level virtualization. 
  
 We will start with a brief recap of day 1 and deal with any outstanding issues. We will 
 then dip our toes into using Virtualbox by installing a tiny Linux distribution on it. 
