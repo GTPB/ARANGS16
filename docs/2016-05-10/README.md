@@ -97,7 +97,11 @@ in the puppet folder.
 ### Session 4: Running the pipeline. 
 
 If the course repo was successfully cloned into the VM by puppet we should be able to navigate 
-into the repo folder and run our pipeline. However, the puppet manifest was run as root 
-(`sudo puppet apply ...`) so our current user (which is, well, try `whoami` - Who am I?) 
-cannot write to it. You can change ownership with `sudo chown -R vagrant arangs2015`. Then 
-download the data into the VM and run the pipeline.
+into the repo folder and run our pipeline. 
+- Have look at the ownership of the folder /home/vagrant/arangs2016. Who owns it and how did that
+  happen? (`sudo puppet apply ...`)
+- Which user are we when we log in on the vagrant box? (`whoami`)
+- Change the user of the repository: `sudo chown -R vagrant arangs2015`
+- Now have a look at `/vagrant_data`. What's that?
+- Make our pipeline.sh inside the vagrant box point to it, clean up the folder (remove result files,
+  keep the fasta and fastq.gz files) and then rerun the pipeline.
