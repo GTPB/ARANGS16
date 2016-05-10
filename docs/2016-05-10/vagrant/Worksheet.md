@@ -5,7 +5,7 @@ Launching a tiny Linux with Vagrant
 - Have a look at the available [vagrant boxes](https://atlas.hashicorp.com/boxes/search)
 - Search for a `tiny` box for the provider `virtualbox`
 - Click on the search result. There should be an instruction for how to initialize the box in a `fixed width font`
-- Go into the vagrant folder in the terminal. Then run the initialization command.
+- Go into this [vagrant folder](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-10/vagrant) in the terminal. Then run the initialization command that was provided.
 - There should now be a file called `Vagrantfile`. Open it in a text editor.
 - Assign more RAM (2048) to the VM by editing the Vagrantfile.
 - Turn on the GUI 
