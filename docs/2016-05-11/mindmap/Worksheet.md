@@ -16,8 +16,8 @@ then create a pull request based on that state + your mind map. Here are the
 steps:
 
 - Create a mind map to summarize what we did yesterday (i.e., attempt to understand Vagrant) using XMind
-- Give your mind map a name that _includes_ the name of your computer, i.e. `t1`,
-  `t2`, `t3`, whatever. You can find out what the name is of your computer by
+- Give your mind map a name that _includes_ the name of your computer, i.e. `t1-SuperMap`,
+  `t2-So-Confused`, `t3-Needs-Coffee`, whatever. You can find out what the name is of your computer by
   looking in the terminal: it should show `participant@t*`. Why do you think we
   want the file name to include the computer name?
 - [Merge the upstream changes into your repo](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-09/git#merging-from-an-upstream-repository)
@@ -28,3 +28,9 @@ steps:
 - Go to the homepage of your repository on GitHub
 - Click the button "New pull request". My repo is the "base fork", you are the "head fork", and
   we are only comparing the master branches.
+- Click the button "Create pull request". Give it a useful title and description. Click "Create ..."
+
+Once I've managed to merge in all the different pull requests all the mind maps will have ended
+up in the same folder in the upstream repository. If you are interested in finding out how other
+people's minds work (or you want to compare notes) you can then merge these changes back into your 
+local repo so you have all the different mind maps locally.
