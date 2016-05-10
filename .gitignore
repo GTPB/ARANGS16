@@ -1,5 +1,5 @@
-"fasta"
-"fastq"
-"bwa"
-"samtools"
+*fasta*
+*fastq*
+*bwa*
+*samtools*
 .gitignore
