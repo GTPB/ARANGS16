@@ -56,11 +56,11 @@ The outline for today is as follows:
 
 ### Session 1: Recap from yesterday. 
  
-Yesterday we saw how Vagrant and Puppet can automate the creation and configuration of 
-compute environments and how to run analyses inside a VM. To capture our understanding of 
-yesterday's progress, we will each make a mindmap with XMind. Give it a name that includes 
-your computer (t1, t2, etc.), add the file to your git repository and send us a pull request. 
-This way we have all of them together.
+Yesterday we saw how Vagrant and Puppet can automate the deployment, configuration and 
+provisioning of compute environments and how to run analyses inside a VM. To capture our 
+understanding of yesterday's progress, we will each make a mindmap with XMind during the 
+recap. We will also share these with each other. Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/mindmap/Worksheet.md) 
+in the mind map folder to share the mind map using a "pull request". 
 
 ### Session 2: Building Vagrant boxes.
 
