@@ -33,4 +33,4 @@ example of provisioning using shell commands in the Vagrantfile. Which provision
   (`git clone`). Make this happen in the home directory of the vagrant user (`cwd` should specify this). Make sure that
   the for this step required package `git` is already installed. Specify the name of the folder that will be created.
 - Once you are confident that the syntax is correct (`puppet apply --noop default.pp` will tell you this), go into the
-  `arangs2016/conf` folder and run `vagrant up`. When all the provisioning is done, go into the VM using `vagrant ssh`
+  `arangs2016/conf` folder and run `vagrant up`. If you get a message that the machine was already provisioned, you can rerun the provisioner using `vagrant provision`. *So, provisioning is done by the host, on the guest!* Then, go into the VM using `vagrant ssh`.
