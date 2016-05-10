@@ -103,6 +103,30 @@ technology. Gits features that can make it easy to track all of this documentati
   [here](https://github.com/naturalis/supersmart) (notice the ''build passing'' badge. Click 
   on it and you can see the test results).
 
+Merging from an upstream repository
+-----------------------------------
+
+During the course we fork and clone the course repository into a whole network of distributed
+repositories. It might make sense, occassionally, to bring these forks up to speed with the
+most recent changes in the upstream repo (i.e. rvosa/arangs2016). Here are the steps to 
+do this:
+
+1. Configure your local repository to be aware of the upstream one from whence it was cloned.
+   This procedure is described [here](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
+   You only need to do this once.
+2. Merge your repository with the upstream one. That procedure is described
+   [here](https://help.github.com/articles/syncing-a-fork/).
+
+Once you have set up your upstream (i.e. step 1) and you want to fetch and merge again (e.g.
+on a subsequent day), you basically need to do this:
+
+```bash
+# make sure you're in the root of arangs2016
+git fetch upstream
+git checkout master # you're probably already on the master
+git merge upstream/master
+```
+
 Git Gotchas
 -----------
 
@@ -126,6 +150,15 @@ directories are completely missing.  Git only tracks directories in the context 
   visual diffs of binary files, unless there are 
   [tools](http://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes) that it can use to get a 
   textual proxy of the files that it can use to compare using traditional text diff.
+- There are some file types that you really don't want to store in a git repository. These include
+  files with sensitive data such as passwords or patient data, binary files (see above), compiled
+  files that only work on one platform, configuration files for integrated development environments
+  (IDEs, example: .Rproj files), very large files, and so on. However, all of these files may 
+  appear inside your git repository while you're working on your project so when you do `git status`
+  you might end up with a very cluttered listing. The way to address this is to create a file
+  called `.gitignore` that has the name patterns (with wildcards) for files to ignore. There is an
+  example of this in the root of the repository, but note that the convention is to NOT store this
+  file under git.
 
 Resources
 ---------
