@@ -13,7 +13,7 @@ files does not assure that they would end up running their analyses in the exact
 environment, with the same tools (and their underlying libraries).
 
 We can solve this problem by using virtualization. Recent advances in computing power and
-architecture has made it possible to run additional operating systems ("guests", "Virtual
+architecture have made it possible to run additional operating systems ("guests", "Virtual
 machines") inside the operating system that runs the computer (the "host"). Several 
 different software packages allow host OSs to run guest VMs. The most popular of these in
 the open source community is Virtualbox, which we will explore today.
