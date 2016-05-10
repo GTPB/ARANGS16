@@ -102,6 +102,6 @@ into the repo folder and run our pipeline.
   happen? (`sudo puppet apply ...`)
 - Which user are we when we log in on the vagrant box? (`whoami`)
 - Change the user of the repository: `sudo chown -R vagrant arangs2016`
-- Now have a look at `/vagrant_data`. What's that?
+- Now have a look at `/vagrantdata`. What's that?
 - Make our pipeline.sh inside the vagrant box point to it, clean up the folder (remove result files,
   keep the fasta and fastq.gz files) and then rerun the pipeline.
