@@ -21,10 +21,10 @@ example of provisioning using shell commands in the Vagrantfile. Which provision
 ```
 
 - Now have a look at [this provisioning script](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/manifests/default.pp).
-- What would the instructions after `dl_bwa` (line 35) do?
-- What immediately preceding steps does `untar_bwa` require?
-- What is the Current Working Directory (`cwd`) where BWA is unzipped?
-- What is the function of `symlink_bwa`? What other methods could be used to achieve the same effect (think of `$PATH`)
+- What would the instructions after `dl_bwa` (line 35) do? _Download bwa_
+- What immediately preceding steps does `untar_bwa` require? _bwa needs to be unzipped, and the `tar` package needs to be installed. These are the `require` statements on line 49._ 
+- What is the Current Working Directory (`cwd`) where BWA is unzipped? _/usr/local/src_
+- What is the function of `symlink_bwa`? What other methods could be used to achieve the same effect (think of `$PATH`) _This creates a symbolic link (i.e. a shortcut) into /usr/local/bin, which is one of the places where the OS looks for executables. Another option would have been to update the `$PATH` variable to include the folder that contains bwa_
 - Do a test run of the provisioning script. If you do it as follows, nothing will be installed yet:
 
  `puppet apply --noop default.pp`
