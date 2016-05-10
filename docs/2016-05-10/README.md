@@ -96,6 +96,9 @@ in the puppet folder.
 
 ### Session 4: Running the pipeline. 
 
+Do a [git merge](https://github.com/rvosa/arangs2016/tree/master/docs/2016-05-09/git#merging-from-an-upstream-repository)
+to get the most recent version of the Vagrantfile. Run it, i.e. some combination of `vagrant up`,
+possibly another round of `vagrant provision` (to do the repo clone), followed by `vagrant ssh`.
 If the course repo was successfully cloned into the VM by puppet we should be able to navigate 
 into the repo folder and run our pipeline. 
 - Have look at the ownership of the folder /home/vagrant/arangs2016. Who owns it and how did that
