@@ -10,6 +10,7 @@ Shareable virtual machines and containers: vagrant and docker
 
 We hope to accomplish the following learning goals today:
 
+- How to create a git "pull request" to share files upstream
 - How Vagrant and packer can be used to create and share boxes
 - How Docker builds off virtualization with a different approach
 - The docker toolset: `docker`, `docker-machine`, and `docker-compose`
