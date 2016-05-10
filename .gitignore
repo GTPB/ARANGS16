@@ -2,4 +2,7 @@
 *fastq*
 *bwa*
 *samtools*
+*.vagrant*
+*~
+*debian*
 .gitignore
