@@ -15,7 +15,7 @@ the recent changes I made in the upstream repository into your own repo, and
 then create a pull request based on that state + your mind map. Here are the
 steps:
 
-- Create a mind map to summarize what we did yesterday (Vagrant) using XMind
+- Create a mind map to summarize what we did yesterday (i.e., attempt to understand Vagrant) using XMind
 - Give your mind map a name that _includes_ the name of your computer, i.e. `t1`,
   `t2`, `t3`, whatever. You can find out what the name is of your computer by
   looking in the terminal: it should show `participant@t*`. Why do you think we
