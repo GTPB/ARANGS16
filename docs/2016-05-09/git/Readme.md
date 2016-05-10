@@ -126,6 +126,15 @@ directories are completely missing.  Git only tracks directories in the context 
   visual diffs of binary files, unless there are 
   [tools](http://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes) that it can use to get a 
   textual proxy of the files that it can use to compare using traditional text diff.
+- There are some file types that you really don't want to store in a git repository. These include
+  files with sensitive data such as passwords or patient data, binary files (see above), compiled
+  files that only work on one platform, configuration files for integrated development environments
+  (IDEs, example: .Rproj files), very large files, and so on. However, all of these files may 
+  appear inside your git repository while you're working on your project so when you do `git status`
+  you might end up with a very cluttered listing. The way to address this is to create a file
+  called `.gitignore` that has the name patterns (with wildcards) for files to ignore. There is an
+  example of this in the root of the repository, but note that the convention is to NOT store this
+  file under git.
 
 Resources
 ---------

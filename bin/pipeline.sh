@@ -23,7 +23,7 @@ if [ ! -e $REFERENCE.bwt ]; then
 	echo "going to index $REFERENCE"
 
 	# Warning: "-a bwtsw" does not work for short genomes,
-	# while "-a is" and "-a div" do not work not for long
+	# while "-a is" and "-a div" do not work for long
 	# genomes. Please choose "-a" according to the length
 	# of the genome.
 	bwa index -a bwtsw $REFERENCE
