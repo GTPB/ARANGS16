@@ -82,6 +82,13 @@ exec {
 		command   => 'ln -s /usr/local/src/samtools-1.2/samtools /usr/local/bin/samtools',
 		creates   => '/usr/local/bin/samtools',       
 		require   => Exec[ 'make_samtools' ];
+
+    # clone arangs2016 repository
+    'clone_arangs2016':
+        command   => 'git clone https://github.com/rvosa/arangs2016.git',
+        cwd       => '/home/vagrant',
+        creates   => '/home/vagrant/arangs2016',
+        require   => Package[ 'git' ];
 }
 
 
