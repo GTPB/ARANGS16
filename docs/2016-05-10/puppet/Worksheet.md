@@ -4,9 +4,11 @@ Launching and provisioning a usable Linux with Vagrant and Puppet
 ![tahr](http://www.exclusiveadventuresnz.com/images/hunting/big-game/bull-tahr/bull-tahr-banner1.jpg)
 
 - Have a look at this edited [Vagrantfile](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/Vagrantfile)
-- Which Linux distribution is specified in this file? Can you find this distribution in the [vagrant cloud](https://atlas.hashicorp.com/boxes/search)? Is this a common distribution? 
-How does it compare to the operating system of your host desktop? Are there likely to be Virtualbox guest additions for this
-distribution?
+- Which Linux distribution is specified in this file? 
+- Can you find this distribution in the [vagrant cloud](https://atlas.hashicorp.com/boxes/search)? 
+- Is this a common distribution? 
+- How does it compare to the operating system of your host desktop? 
+- Are there likely to be Virtualbox guest additions for this distribution?
 - Provisioning is the process of installing and configuring additional tools on a base OS. Before lunch we saw an
 example of provisioning using shell commands in the Vagrantfile. Which provisioner is used in this edited Vagrantfile?
 - Install `puppet` using the following commands:
