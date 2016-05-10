@@ -8,7 +8,7 @@ Launching and provisioning a usable Linux with Vagrant and Puppet
 - Can you find this distribution in the [vagrant cloud](https://atlas.hashicorp.com/boxes/search)? _Yes, [here](https://atlas.hashicorp.com/ubuntu/boxes/trusty64)_
 - Is this a common distribution? _The commonest: it is the first result in the vagrant cloud and has been downloaded more than 15 million times_
 - How does it compare to the operating system of your host desktop? _It is the same_
-- Are there likely to be Virtualbox guest additions for this distribution?
+- Are there likely to be Virtualbox guest additions for this distribution? _"Guest additions" are provided by Virtualbox to give a smoother user experience, for example by adding the ability to have shared folders between guest and host, to have the screen resolution of the guest match that of the host, and so on. Given that `trusty64` is the most common box, it is likely that this additional functionality has been developed and is available._
 - Provisioning is the process of installing and configuring additional tools on a base OS. Before lunch we saw an
 example of provisioning using shell commands in the Vagrantfile. Which provisioner is used in this edited Vagrantfile?
 - Install `puppet` using the following commands:
