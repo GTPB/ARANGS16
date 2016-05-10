@@ -5,9 +5,9 @@ Launching and provisioning a usable Linux with Vagrant and Puppet
 
 - Have a look at this edited [Vagrantfile](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/Vagrantfile)
 - Which Linux distribution is specified in this file? _The file specifies [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64), which corresponds with Ubuntu 14.04 LTS "Trusty Tahr"_ 
-- Can you find this distribution in the [vagrant cloud](https://atlas.hashicorp.com/boxes/search)? 
-- Is this a common distribution? 
-- How does it compare to the operating system of your host desktop? 
+- Can you find this distribution in the [vagrant cloud](https://atlas.hashicorp.com/boxes/search)? _Yes, [here](https://atlas.hashicorp.com/ubuntu/boxes/trusty64)_
+- Is this a common distribution? _The commonest: it is the first result in the vagrant cloud and has been downloaded more than 15 million times_
+- How does it compare to the operating system of your host desktop? _It is the same_
 - Are there likely to be Virtualbox guest additions for this distribution?
 - Provisioning is the process of installing and configuring additional tools on a base OS. Before lunch we saw an
 example of provisioning using shell commands in the Vagrantfile. Which provisioner is used in this edited Vagrantfile?
