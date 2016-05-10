@@ -6,6 +6,24 @@ Virtualization and provision with Virtualbox and puppet
 -------------------------------------------------------
 *2016-05-10*
 
+#### Goals
+
+With today's instructions and exercises we 
+hope to accomplish the following learning goals:
+
+- Download and install of Virtualbox, if needed
+- Configuration of VMs using Virtualbox (memory, processors, networking)
+- Launching, suspending, quitting, removing VMs
+- Download and install Puppet, if needed
+- Applying puppet manifests
+- Writing simple puppet manifests
+- Download and install Vagrant, if needed
+- Adding / initializing a vagrant box
+- Launching, suspending, quitting, removing boxes
+- Logging into a box
+
+#### Virtualization
+
 On the previous day we learned how to track changes in, and collaborate on, text files 
 using `git` and Github. We would now be able to share analysis scripts, configuration
 files, and (small) data files. However, simply pointing other researchers to our text
@@ -13,10 +31,12 @@ files does not assure that they would end up running their analyses in the exact
 environment, with the same tools (and their underlying libraries).
 
 We can solve this problem by using virtualization. Recent advances in computing power and
-architecture has made it possible to run additional operating systems ("guests", "Virtual
+architecture have made it possible to run additional operating systems ("guests", "Virtual
 machines") inside the operating system that runs the computer (the "host"). Several 
 different software packages allow host OSs to run guest VMs. The most popular of these in
 the open source community is Virtualbox, which we will explore today.
+
+#### Provisioning
 
 Virtualbox allows us to host VMs, so we could tell our collaborators to install a specific
 operating system (example: Ubuntu 14.04LTS) on it and run our scripts there. However, 
@@ -33,6 +53,8 @@ configuration file) all the dependencies that are defined are verified and if an
 missing they are installed using the instructions in the manifest. This process is called
 "provisioning".
 
+#### Bundling it all using Vagrant
+
 In principle we could start a VM in Virtualbox, log in on it, and then typing the 
 provisioning commands by hand on the terminal of our fresh guest VM. However, we would 
 then probably find out that the puppet manifest itself has requirements (such as the 
@@ -41,20 +63,7 @@ dependency loop (and to avoid having to type the provisioning commands by hand e
 we create a new VM) we will use a system that combines the download and installation of
 VMs as well as their provisioning: Vagrant. The end result is to have a fully specified
 environment consisting of a guest OS with all the installation instructions for 
-dependencies bundled into a Vagrant "box". With today's instructions and exercises we 
-hope to accomplish the following learning goals:
-
-- Download and install of Virtualbox, if needed
-- Configuration of VMs using Virtualbox (memory, processors, networking)
-- Launching, suspending, quitting, removing VMs
-- Download and install Puppet, if needed
-- Applying puppet manifests
-- Writing simple puppet manifests
-- Download and install Vagrant, if needed
-- Adding / initializing a vagrant box
-- Launching, suspending, quitting, removing boxes
-- Logging into a box
-
+dependencies bundled into a Vagrant "box".
 
 Schedule
 --------

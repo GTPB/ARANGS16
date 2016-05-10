@@ -1,25 +1,5 @@
 # ARANGS 2016
 
-### Docker
-
-#### Docker vs virtualization
-*md table*
-Docker  Virtualization
-image   image
-host    host
-container   instance
-* Containers use up less resources & space
-* Several containers can share host resources
-* They can have their package version without conflicts
-*graphviz sch*
-* Security issues ?
-* Launch Docker image if available, else downloads them on the fly from Docker registry.
-* Image vs client vs machine ?
-
-[sch](http://www.google.fr/url?source=imglanding&ct=img&q=http://zdnet3.cbsistatic.com/hub/i/r/2014/10/02/1f130129-49e2-11e4-b6a0-d4ae52e95e57/resize/770x578/3f83f67acfa33fe05865373b2b4b71dd/docker-vm-container.png&sa=X&ei=MqVUVeS1K6rlsAS_kID4DQ&ved=0CAkQ8wc&usg=AFQjCNHynakxkWA3l42a6TRdpgbwufMhNA)
-[sch2](http://www.google.pt/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAcQjRw&url=http%3A%2F%2Fwww.linformaticien.com%2Factualites%2Fid%2F33508%2Fdocker-1-0-l-outil-qui-va-booster-l-adoption-du-cloud.aspx&ei=Y6hUVZLNH42nyATptoCgCw&bvm=bv.93112503,d.cWc&psig=AFQjCNEpfqcUKnPSPqXd7Ryqn6EH3Orc0g&ust=1431697864253097)
-
-
 ## DAY 4
 
 [Worksheet](https://github.com/dmlond/arangs2015/blob/master/docs/2015-05-13/intro_docker/Worksheet.md)
