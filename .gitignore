@@ -1,0 +1,5 @@
+"fasta"
+"fastq"
+"bwa"
+"samtools"
+.gitignore
