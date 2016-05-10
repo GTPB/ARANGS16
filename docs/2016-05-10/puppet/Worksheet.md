@@ -30,5 +30,7 @@ example of provisioning using shell commands in the Vagrantfile. Which provision
  `puppet apply --noop default.pp`
 
 - Now try to add another install command to the provisioning script. Make the command clone the course github repo 
-(`git clone`). Make this happen in the home directory of the vagrant user (`cwd` should specify this). Make sure that
-the for this step required package `git` is already installed. Specify the name of the folder that will be created.
+  (`git clone`). Make this happen in the home directory of the vagrant user (`cwd` should specify this). Make sure that
+  the for this step required package `git` is already installed. Specify the name of the folder that will be created.
+- Once you are confident that the syntax is correct (`puppet apply --noop default.pp` will tell you this), go into the
+  `arangs2016/conf` folder and run `vagrant up`. When all the provisioning is done, go into the VM using `vagrant ssh`
