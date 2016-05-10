@@ -10,7 +10,7 @@ Launching and provisioning a usable Linux with Vagrant and Puppet
 - How does it compare to the operating system of your host desktop? _It is the same_
 - Are there likely to be Virtualbox guest additions for this distribution? _"Guest additions" are provided by Virtualbox to give a smoother user experience, for example by adding the ability to have shared folders between guest and host, to have the screen resolution of the guest match that of the host, and so on. Given that `trusty64` is the most common box, it is likely that this additional functionality has been developed and is available._
 - Provisioning is the process of installing and configuring additional tools on a base OS. Before lunch we saw an
-example of provisioning using shell commands in the Vagrantfile. Which provisioner is used in this edited Vagrantfile?
+example of provisioning using shell commands in the Vagrantfile. Which provisioner is used in this edited Vagrantfile? _puppet_
 - Install `puppet` using the following commands:
 
 ```
