@@ -36,13 +36,23 @@ machines") inside the operating system that runs the computer (the "host"). Seve
 different software packages allow host OSs to run guest VMs. The most popular of these in
 the open source community is Virtualbox, which we will explore today.
 
+#### Managed, scriptable virtualization using Vagrant
+
+In principle we could download an image, start it as a VM in Virtualbox, log in on it, 
+and then do all the configuration by hand, partly on the host and partly in the guest. 
+This is cumbersome and error prone. It would be much more convenient if the specification
+of the image and its configuration as a VM was standardized and scriptable. For example,
+wouldn't it be great if the whole process we did previously could be captured in a script
+that can be maintained in some kind of version control system? Yes, it would. Vagrant
+is one of a number of systems that provide this functionality. We'll play around with this.
+
 #### Provisioning
 
-Virtualbox allows us to host VMs, so we could tell our collaborators to install a specific
-operating system (example: Ubuntu 14.04LTS) on it and run our scripts there. However, 
-unless we specify an OS version that is specifically geared towards NGS analysis (example:
-BioLinux) there are going to be many missing tools. This brings us back to the situation
-where we have to say about these tools that "we used `foo` (Smith, 2013) and `bar` 
+Virtualbox or Vagrant allow us to host VMs, so we could tell our collaborators to install 
+a specific operating system (example: Ubuntu 14.04LTS) on it and run our scripts there. 
+However, unless we specify an OS version that is specifically geared towards NGS analysis 
+(example: BioLinux) there are going to be many missing tools. This brings us back to the 
+situation where we have to say about these tools that "we used `foo` (Smith, 2013) and `bar` 
 (Jones, 2014)". That's no good: these tools will have different versions, and they may 
 need to be compiled (with which flags?).
 
@@ -53,24 +63,12 @@ configuration file) all the dependencies that are defined are verified and if an
 missing they are installed using the instructions in the manifest. This process is called
 "provisioning".
 
-#### Bundling it all using Vagrant
-
-In principle we could start a VM in Virtualbox, log in on it, and then typing the 
-provisioning commands by hand on the terminal of our fresh guest VM. However, we would 
-then probably find out that the puppet manifest itself has requirements (such as the 
-`puppet` command, or the `git` command) that aren't on the VM yet. To break out of this
-dependency loop (and to avoid having to type the provisioning commands by hand every time
-we create a new VM) we will use a system that combines the download and installation of
-VMs as well as their provisioning: Vagrant. The end result is to have a fully specified
-environment consisting of a guest OS with all the installation instructions for 
-dependencies bundled into a Vagrant "box".
-
 Schedule
 --------
 
 The outline for today is as follows:
 
-### Session 1: Virtualization 101. 
+### Session 1: Entry level virtualization. 
  
 We will start with a brief recap of day 1 and deal with any outstanding issues. We will 
 then dip our toes into using Virtualbox by installing a tiny Linux distribution on it. 
