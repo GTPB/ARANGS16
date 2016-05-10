@@ -4,7 +4,7 @@ Launching and provisioning a usable Linux with Vagrant and Puppet
 ![tahr](http://www.exclusiveadventuresnz.com/images/hunting/big-game/bull-tahr/bull-tahr-banner1.jpg)
 
 - Have a look at this edited [Vagrantfile](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/Vagrantfile)
-- Which Linux distribution is specified in this file? 
+- Which Linux distribution is specified in this file? _The file specifies [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64), which corresponds with Ubuntu 14.04 LTS "Trusty Tahr"_ 
 - Can you find this distribution in the [vagrant cloud](https://atlas.hashicorp.com/boxes/search)? 
 - Is this a common distribution? 
 - How does it compare to the operating system of your host desktop? 
