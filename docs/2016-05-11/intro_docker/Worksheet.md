@@ -1,15 +1,10 @@
-* install docker-machine
-* install docker
-* create a docker-machine called arangs2015
-* configure docker to talk to your arangs2015 docker-machine
-* pull the busybox image from the Docker registry
-* run an interactive + tty sh session inside a busybox image container
-
-**in another terminal**
+* Use `docker-machine` to create a docker machine called arangs2016
+* Use `docker-machine env` to configure docker to talk to your arangs2015 docker-machine
 * list the docker-machines and their state
-* configure docker to talk to your arangs2015 docker-machine
-* list docker images
-* list docker containers
+* Now, you are ready to download (_pull_) and run software tools running as images on docker (look at the registry [https://hub.docker.com/explore/](docker-hub)). Now, pull the 'busybox' image from the Docker hub. Which tag does the busybox image have?
+* List all docker images
+* Run an interactive + tty sh session inside a busybox image container. You are now inside the busybox image. Which user are you?
+* Open another terminal and list active docker containers. 
 
 **in the terminal where you are running busybox**
 * echo "HELLO WORLD"
@@ -17,9 +12,6 @@
 * ls /
 * try some other commands
 * exit
-* echo $?
-* instead of running 'sh', run ls /notthere
-* echo $?
 * list out all containers
 * rm all containers
 * remove the busybox image
