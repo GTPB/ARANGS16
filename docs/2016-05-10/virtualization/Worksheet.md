@@ -9,5 +9,7 @@ Launching a tiny Linux by hand on Virtualbox
 - Would you be able to compile from source on this VM in its current state? _there appear to be no build tools_
 - What tools would you look for to check if you can compile from source? _e.g. make, gcc, etc._
 - Is git installed? _no. To install git:_
+```bash
     $ su # password root
-    # tazpkg get-install git
+    $ tazpkg get-install git
+```
