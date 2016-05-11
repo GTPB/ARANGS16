@@ -1,13 +1,15 @@
 Vagrant / Packer exercises
 -------------------------
 ### Template file
-* Have a look at the [packer template](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json) file.
-* What will be the name of our Vagrant box if we execute this file using packer?
-* Which provisioning tools are specified? 
-* What does the "shell" provisioner install and why?
-* Where does the "puppet" provisioner get its instructions from?
-* In what order would the provisioners have to be executed?
+* Have a look at the [packer template](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json) file. _It's a JSON file. Key/value pairs are between {}, lists are between []_
+* What will be the name of our Vagrant box if we execute this file using packer? _Naturalis/arangs2016_
+* Which provisioning tools are specified? _[shell](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L11) and [puppet-masterless](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L25)_
+* What does the "shell" provisioner install and why? _The shell installs puppet, so that puppet-masterless can do its thing_
+* Where does the "puppet" provisioner get its instructions from? _From the manifest in manifests/default.pp_
+* In what order would the provisioners have to be executed? _1. shell, 2. puppet_
 * How many different virtualization environments are we building for?
+* Do you recognize any of the steps in `boot_command` from earlier?
+* Do you think there will be special functionality such as shared folders available? How can you tell?
 * What OS are we using?
 
 ### Running packer
@@ -22,7 +24,13 @@ There are two ways in which you can have packer build a Vagrant box:
 
 For `push` you need to have an account on a web service that requires you to contact a 
 sales department where a human needs to respond (it's free, but still a hassle). The `atlas_name`
-and `atlas_username` variables provide the credentials so that the server accepts the build. 
+and `atlas_username` variables provide the credentials so that the server accepts the build.
+You will need an `atlas token` which is stored in the environment variable `ATLAS_TOKEN`, 
+set it to:
+
+```bash
+export ATLAS_TOKEN=s8DZpWM4CvMjHG7qscSbnKoBQxjWwPZjMbByGi6kujMxqF1hqKwyUssovMQzqyFY8W4
+```
 
 It is somewhat instructive to run `packer build`, i.e. to do it locally, because it will 
 show you what is being downloaded in what order and how the virtual machine is being 
