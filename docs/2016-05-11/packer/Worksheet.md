@@ -8,6 +8,7 @@ Vagrant / Packer exercises
 * Where does the "puppet" provisioner get its instructions from?
 * In what order would the provisioners have to be executed?
 * How many different virtualization environments are we building for?
+* Do you recognize any of the steps in `boot_command` from earlier?
 * What OS are we using?
 
 ### Running packer
