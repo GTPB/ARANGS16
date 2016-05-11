@@ -63,7 +63,7 @@ for FASTQ in $FASTQS; do
 		echo "going to align $FASTQ against $REFERENCE"
 
 		# use $CORES threads
-		$BWA aln -t $CORES $REFERENCE $FASTQ > $OUTFILE
+		$BWA aln -t $CORES $REFERENCE $FASTQ -f $OUTFILE
 	else
 		echo "alignment $OUTFILE already created"
 	fi
@@ -73,8 +73,8 @@ done
 if [ ! -e $SAM ]; then
 
 	# create paired-end SAM file
-	echo "going to run $BWA sampe $FASTA $SAIS $FASTQS > $SAM"
-	$BWA sampe $REFERENCE $SAIS $FASTQS > $SAM
+	echo "going to run $BWA sampe $FASTA $SAIS $FASTQS -f $SAM"
+	$BWA sampe $REFERENCE $SAIS $FASTQS -f $SAM
 else
 	echo "sam file $SAM already created"
 fi
@@ -84,8 +84,8 @@ if [ ! -e $SAM.filtered ]; then
 	# -bS   = input is SAM, output is BAM
 	# -F 4  = remove unmapped reads
 	# -q 50 = remove reads with mapping qual < 50
-	echo "going to run $SAMTOOLS view -bS -F 4 -q 50 $SAM > $SAM.filtered"
-	$SAMTOOLS view -bS -F 4 -q 50 $SAM > $SAM.filtered
+	echo "going to run $SAMTOOLS view -bS -F 4 -q 50 $SAM -o $SAM.filtered"
+	$SAMTOOLS view -bS -F 4 -q 50 $SAM -o $SAM.filtered
 	gzip -9 $SAM
 else
 	echo "sam file $SAM.filtered already created"
