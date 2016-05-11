@@ -20,4 +20,4 @@ something like:
   working on (`docker images`). Find the SHA hash for the image and commit it, e.g
   `docker commit bb2210f1a461 ubungs`_
 - modify the pipeline.sh so that it invokes `docker run ...` rather than bwa/samtools
-  directly. _[qed](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.containerized.sh)_
+  directly. _Be aware that the pipeline used a lot of re-direction, which doesn't work, instead use the `-f` and `-o` arguments for bwa and samtools, respectively: [qed](https://github.com/rvosa/arangs2016/blob/master/bin/pipeline.containerized.sh)_
