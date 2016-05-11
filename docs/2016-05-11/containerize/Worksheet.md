@@ -15,6 +15,6 @@ something like:
   _I did download_samtools.sh and download_bwa.sh on the host, which means the 
   downloads end up in /arangs/src on the guest. Then `bunzip2 *.bz2` and `tar xvf ...` on each of the tar files._
 - you should now be able to run `make` inside the container, and copy the
-  resulting binary to somewhere in the path of the container.
+  resulting binary to somewhere in the path of the container, such as `/usr/local/bin`.
 - modify the pipeline.sh so that it invokes `docker run ...` rather than bwa/samtools
   directly. 
