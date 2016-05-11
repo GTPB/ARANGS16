@@ -17,17 +17,19 @@ image that the container is instanciated from. It is very worthwile to browse th
 * Run an interactive + tty sh session (open a interactive shell) inside a busybox image container. You are now inside the busybox container. Which user are you?
 * Open another terminal and list active docker containers. 
 
-## in the terminal where you are running busybox
+***in the terminal where you are running busybox***
 * uname -a
 * ls /
 * try some other commands
 
-**in another terminal**
+***in another terminal***
 
 * list all containers
 * list all running containers
 * rm all containers
 * remove the busybox image
+
+## Run an ubuntu image
 
 * Run an interactive tty in a `ubuntu:trusty` docker container *without* pulling the `ubuntu:trusty` image beforehand
 * Run `sleep 5` in the docker container. What is the difference if you provide the `-detach` option to `docker run`?
