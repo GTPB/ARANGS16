@@ -1,6 +1,6 @@
 Getting started with the `Docker` command-line interface
 -------------------------
-There are many _images_ with different OS and software available  in docker registries (e.g. [https://hub.docker.com/explore/](docker-hub)). We will start with downloading the tiny UNIX based operating system Busybox. Pull the 'busybox' image from the Docker hub. 
+There are many _images_ with different OS and software available  in docker registries (e.g. [docker-hub](https://hub.docker.com/explore/)). We will start with downloading the tiny UNIX based operating system Busybox. Pull the 'busybox' image from the Docker hub. 
 
 ## Listing available images and containers
 To keep track of your images and containers, docker offers the subcommands `docker images` and `docker ps`.
