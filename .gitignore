@@ -7,4 +7,6 @@
 *debian*
 *.deb
 *.zip
+*.save
+*packer*
 .gitignore
