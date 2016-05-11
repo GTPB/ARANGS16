@@ -20,8 +20,7 @@ We hope to accomplish the following learning goals today:
 - How Docker builds off virtualization with a different approach
 - The docker toolset: `docker`, `docker-machine`, and `docker-compose`
 - Container Applications compared to Virtual Machine Images
-- How to create a docker machine
-- How to configure the Docker commandline application to work with a docker machine
+- How to run Docker containers
 - The global docker hub registry
 - Volume Containers to permanently store and share data
 - How to plug host directories into the file system expected by a container application
