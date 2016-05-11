@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# apt-get update
+# install packages
+apt-get update
 apt-get install -y wget bzip2 tar build-essential zlib1g-dev
 
 # download bwa
@@ -16,7 +17,7 @@ cd bwa-0.7.12
 make
 
 # make symlink to executable
-ln -s $PWD/bwa /usr/local/bin/bwa
+cp $PWD/bwa /usr/local/bin/bwa
 
 
 
