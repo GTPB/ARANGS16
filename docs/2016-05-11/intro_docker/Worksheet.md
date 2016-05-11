@@ -12,7 +12,7 @@
 * ls /
 * try some other commands
 
-** in another terminal
+**in another terminal
 * list all containers
 * list all running containers
 * rm all containers
