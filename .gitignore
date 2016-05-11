@@ -3,4 +3,5 @@
 *bwa*
 *samtools*
 *~
-*/.vagrant/*
+*.vagrant*
+*packer*
