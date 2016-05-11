@@ -8,7 +8,7 @@ Vagrant / Packer exercises
 * Where does the "puppet" provisioner get its instructions from? _From the manifest in manifests/default.pp_
 * In what order would the provisioners have to be executed? _1. shell, 2. puppet_
 * How many different virtualization environments are we building for? _In this case, only for [Virtualbox](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L31)._
-* Do you recognize the function of any of the steps in `boot_command` from earlier?
+* Do you recognize the function of any of the steps in `boot_command` from earlier? _Among other things, it sets up some of the localization, i.e. the language (`en US`) and the keyboard layout. We also did this by hand when we were setting up slitaz._ 
 * Do you think there will be special functionality such as shared folders available? How can you tell?
 * What OS are we using?
 
