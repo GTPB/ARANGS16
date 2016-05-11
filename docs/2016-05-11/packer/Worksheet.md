@@ -9,8 +9,8 @@ Vagrant / Packer exercises
 * In what order would the provisioners have to be executed? _1. shell, 2. puppet_
 * How many different virtualization environments are we building for? _In this case, only for [Virtualbox](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L31)._
 * Do you recognize the function of any of the steps in `boot_command` from earlier? _Among other things, it sets up some of the localization, i.e. the language (`en US`) and the keyboard layout. We also did this by hand when we were setting up slitaz._ 
-* Do you think there will be special functionality such as shared folders available? How can you tell?
-* What OS are we using?
+* Do you think there will be special functionality such as shared folders available? How can you tell? _Shared folders will be available because this functionality is provided by the guest additions, which are [being installed](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L54)_ 
+* What OS are we using? _[Ubuntu 14.04 LTS, 64bit, AMD architecture](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L48)_
 
 ### Running packer
 * Install the [packer](http://packer.io) program
