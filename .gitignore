@@ -4,3 +4,10 @@
 *samtools*
 *~
 */.vagrant/*
+conf/vagrant/.vagrant/
+conf/vagrant/manifests/default.pp.old
+conf/vagrant/packer_cache/
+conf/vagrant/packer_virtualbox-iso_virtualbox.box
+conf/vagrant/puppetlabs-release-trusty.deb
+conf/vagrant/puppetlabs-release-trusty.deb.1
+
