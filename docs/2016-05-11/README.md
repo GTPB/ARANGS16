@@ -6,7 +6,12 @@ Shareable virtual machines and containers: vagrant and docker
 -------------------------------------------------------------
 *2016-05-11*
 
-#### Goals
+#### Structure and goals
+
+Today we will finish with Vagrant by learning how to package our own Vagrant box
+files. Once we've covered all of Vagrant we were going to cover we will do a 
+recap by each making our own mind map, which we will share with each other. Then
+we will transition to Docker, which is another approach to virtualization.
 
 We hope to accomplish the following learning goals today:
 
