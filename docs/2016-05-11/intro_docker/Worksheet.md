@@ -10,7 +10,7 @@ To keep track of your images and containers, docker offers the subcommands `dock
 * List all docker images running on your host
 * Are there any (running) containers?
 
-## Creating containers and running commands on them
+## Containers and how to run commands in them
 There are several ways to create docker containers. One of them is `docker run` which requires specifying the
 image that the container is instanciated from. It is very worthwile to browse through the options of this subcommand (`docker help run`).
 
@@ -44,7 +44,7 @@ with the `--volume` or `-v` command passed to `docker run`.
 * Run a cat on this file specifying the above directory as shared to `docker run`
 * Create a file within the docker container that is exposed to your host machine
 
-## Host/Container communication
+## Host/container communication
 Next we will see how, with just a few commands, we can expoose ports and thereby etsablish commonication between containers and hosts. We will install an apache server on a running container and access it from the host machine.
 
 * Run an interactive bash shell using the `ubuntu:trusty` image. 
