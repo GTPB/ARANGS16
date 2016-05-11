@@ -55,15 +55,7 @@ Schedule
 
 The outline for today is as follows:
 
-### Session 1: Recap from yesterday. 
- 
-Yesterday we saw how Vagrant and Puppet can automate the deployment, configuration and 
-provisioning of compute environments and how to run analyses inside a VM. To capture our 
-understanding of yesterday's progress, we will each make a mindmap with XMind during the 
-recap. We will also share these with each other. Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/mindmap/Worksheet.md) 
-in the mind map folder to share the mind map using a "pull request". 
-
-### Session 2: Building Vagrant boxes.
+### Session 1: Building Vagrant boxes.
 
 We are going to make our own vagrant box file to share with others. The end
 result will be something [like this](https://atlas.hashicorp.com/Naturalis/boxes/arangs2015),
@@ -71,6 +63,14 @@ which you can install with `vagrant init Naturalis/arangs2015` (etc.). A box fil
 is [a combination of the virtual hard drive of the VM and metadata](http://docs.vagrantup.com/v2/boxes/format.html).
 Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/packer/Worksheet.md) 
 in the packer folder to build a Vagrant box.
+
+### Session 2: Recap from yesterday. 
+ 
+Yesterday we saw how Vagrant and Puppet can automate the deployment, configuration and 
+provisioning of compute environments and how to run analyses inside a VM. To capture our 
+understanding of yesterday's progress, we will each make a mindmap with XMind during the 
+recap. We will also share these with each other. Do the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/mindmap/Worksheet.md) 
+in the mind map folder to share the mind map using a "pull request". 
 
 ### Session 3: Docker introduction. 
 
