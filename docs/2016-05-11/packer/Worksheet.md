@@ -9,6 +9,7 @@ Vagrant / Packer exercises
 * In what order would the provisioners have to be executed?
 * How many different virtualization environments are we building for?
 * Do you recognize any of the steps in `boot_command` from earlier?
+* Do you think there will be special functionality such as shared folders available? How can you tell?
 * What OS are we using?
 
 ### Running packer
