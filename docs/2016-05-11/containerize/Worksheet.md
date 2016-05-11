@@ -16,5 +16,8 @@ something like:
   downloads end up in /arangs/src on the guest. Then `bunzip2 *.bz2` and `tar xvf ...` on each of the tar files._
 - you should now be able to run `make` inside the container, and copy the
   resulting binary to somewhere in the path of the container, such as `/usr/local/bin`.
+  _Once make has completed for both tools, exit the container. Then, find the image you were
+  working on (`docker images`). Find the SHA hash for the image and commit it, e.g
+  `docker commit bb2210f1a461 ubungs`_
 - modify the pipeline.sh so that it invokes `docker run ...` rather than bwa/samtools
   directly. 
