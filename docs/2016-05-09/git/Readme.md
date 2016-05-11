@@ -103,6 +103,30 @@ technology. Gits features that can make it easy to track all of this documentati
   [here](https://github.com/naturalis/supersmart) (notice the ''build passing'' badge. Click 
   on it and you can see the test results).
 
+Merging from an upstream repository
+-----------------------------------
+
+During the course we fork and clone the course repository into a whole network of distributed
+repositories. It might make sense, occassionally, to bring these forks up to speed with the
+most recent changes in the upstream repo (i.e. rvosa/arangs2016). Here are the steps to 
+do this:
+
+1. Configure your local repository to be aware of the upstream one from whence it was cloned.
+   This procedure is described [here](https://help.github.com/articles/configuring-a-remote-for-a-fork/).
+   You only need to do this once.
+2. Merge your repository with the upstream one. That procedure is described
+   [here](https://help.github.com/articles/syncing-a-fork/).
+
+Once you have set up your upstream (i.e. step 1) and you want to fetch and merge again (e.g.
+on a subsequent day), you basically need to do this:
+
+```bash
+# make sure you're in the root of arangs2016
+git fetch upstream
+git checkout master # you're probably already on the master
+git merge upstream/master
+```
+
 Git Gotchas
 -----------
 
