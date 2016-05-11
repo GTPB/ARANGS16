@@ -7,7 +7,7 @@ Vagrant / Packer exercises
 * What does the "shell" provisioner install and why? _The shell installs puppet, so that puppet-masterless can do its thing_
 * Where does the "puppet" provisioner get its instructions from? _From the manifest in manifests/default.pp_
 * In what order would the provisioners have to be executed? _1. shell, 2. puppet_
-* How many different virtualization environments are we building for? _In this case, only for Virtualbox._
+* How many different virtualization environments are we building for? _In this case, only for [Virtualbox](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L31)._
 * Do you recognize the function of any of the steps in `boot_command` from earlier?
 * Do you think there will be special functionality such as shared folders available? How can you tell?
 * What OS are we using?
