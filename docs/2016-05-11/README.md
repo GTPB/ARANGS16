@@ -86,6 +86,10 @@ in the docker folder (and finish them after the tea break).
 
 ### Session 4: Docker Commandline.  
 
+Given what we've seen so far we should be able to install bwa and samtools
+inside a docker container. Here's an [assignment](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/containerize/Worksheet.md)
+to exercise this.
+
 In this part we will work with the docker commandline to
 run some of the official images hosted by the Docker Hub.  In doing so, we will learn about the following important concepts:
   - a visceral feeling for how docker is different from virtualization
