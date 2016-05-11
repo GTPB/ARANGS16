@@ -4,7 +4,8 @@
 
 # Here we define where our data reside. Perhaps we may need to modify this depending on
 # how we run the pipeline.
-DATA=../data
+#DATA=../data
+DATA=/vagrantdata
 
 # Here we define the number of cores we will use for the calculations. Perhaps we may need
 # to modify this depending on the configuration of our VM
