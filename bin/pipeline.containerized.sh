@@ -86,7 +86,6 @@ if [ ! -e $SAM.filtered ]; then
 	# -q 50 = remove reads with mapping qual < 50
 	echo "going to run $SAMTOOLS view -bS -F 4 -q 50 $SAM -o $SAM.filtered"
 	$SAMTOOLS view -bS -F 4 -q 50 $SAM -o $SAM.filtered
-	gzip -9 $SAM
 else
 	echo "sam file $SAM.filtered already created"
 fi
