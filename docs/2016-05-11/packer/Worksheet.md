@@ -21,9 +21,11 @@ There are two ways in which you can have packer build a Vagrant box:
  2. Using `packer build ...`, which does it locally.
 
 For `push` you need to have an account on a web service that requires you to contact a 
-sales department where a human needs to respond (it's free, but still a hassle). It is 
-somewhat instructive to run `packer build`, i.e. to do it locally, because it will show
-you what is being downloaded in what order and how the virtual machine is being 
+sales department where a human needs to respond (it's free, but still a hassle). The `atlas_name`
+and `atlas_username` variables provide the credentials so that the server accepts the build. 
+
+It is somewhat instructive to run `packer build`, i.e. to do it locally, because it will 
+show you what is being downloaded in what order and how the virtual machine is being 
 provisioned. On the other hand, this is somewhat time- and bandwidth consuming because
 an Ubuntu image needs to be downloaded. Hence, be aware of this possibility but consider
 carefully if this is something you actually want to do right now. (Maybe we should do it
