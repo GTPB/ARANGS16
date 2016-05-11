@@ -22,11 +22,11 @@ There are two ways in which you can have packer build a Vagrant box:
  1. Using `packer push ...`, which sends the build process to a server
  2. Using `packer build ...`, which does it locally.
 
-For `push` you need to have an account on a web service that requires you to contact a 
-sales department where a human needs to respond (it's free, but still a hassle). The `atlas_name`
-and `atlas_username` variables provide the credentials so that the server accepts the build.
-You will need an `atlas token` which is stored in the environment variable `ATLAS_TOKEN`, 
-set it to:
+To use packer (even locally, apparently) you need to have an account on a web service that 
+requires you to contact a sales department where a human needs to respond (it's free, but 
+still a hassle). The `atlas_name` and `atlas_username` variables provide the credentials so 
+that the server accepts the build. You will need an `atlas token` which is stored in the 
+environment variable `ATLAS_TOKEN`, set it to:
 
 ```bash
 export ATLAS_TOKEN=s8DZpWM4CvMjHG7qscSbnKoBQxjWwPZjMbByGi6kujMxqF1hqKwyUssovMQzqyFY8W4
