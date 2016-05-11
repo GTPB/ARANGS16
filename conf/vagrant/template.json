@@ -35,7 +35,7 @@
                 "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
                 "hostname={{ .Name }} ",
                 "fb=false debconf/frontend=noninteractive ",
-                "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false ",
+                "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=Pt keyboard-configuration/variant=Pt console-setup/ask_detect=false ",
                 "initrd=/install/initrd.gz -- <enter>"
             ],
             "headless": false,

@@ -89,6 +89,10 @@ exec {
         cwd       => '/home/vagrant',
         creates   => '/home/vagrant/arangs2016',
         require   => Package[ 'git' ];
+    'chown_arangs2016':
+        command   => 'chown -R vagrant:vagrant /home/vagrant/arangs2016',
+        cwd       => '/home/vagrant',
+        require   => Exec[ 'clone_arangs2016' ];
 }
 
 
