@@ -4,9 +4,9 @@ Vagrant / Packer exercises
 * Have a look at the [packer template](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json) file. _It's a JSON file. Key/value pairs are between {}, lists are between []_
 * What will be the name of our Vagrant box if we execute this file using packer? _Naturalis/arangs2016_
 * Which provisioning tools are specified? _[shell](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L11) and [puppet-masterless](https://github.com/rvosa/arangs2016/blob/master/conf/vagrant/template.json#L25)_
-* What does the "shell" provisioner install and why?
-* Where does the "puppet" provisioner get its instructions from?
-* In what order would the provisioners have to be executed?
+* What does the "shell" provisioner install and why? _The shell installs puppet, so that puppet-masterless can do its thing_
+* Where does the "puppet" provisioner get its instructions from? _From the manifest in manifests/default.pp_
+* In what order would the provisioners have to be executed? _1. shell, 2. puppet_
 * How many different virtualization environments are we building for?
 * Do you recognize any of the steps in `boot_command` from earlier?
 * Do you think there will be special functionality such as shared folders available? How can you tell?
