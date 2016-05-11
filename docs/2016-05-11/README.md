@@ -81,25 +81,20 @@ in the mind map folder to share the mind map using a "pull request".
 We will now begin to look at a newer technology that has emerged within the last few years, Docker.  
 In this session, we will go over the basic concepts of the Docker system, and get to know its
 similarities and differences with Virtualization.  We will then learn about the docker ecosystem on 
-registry.docker.hub. We will then install the software we will be using in the class. Start
-with the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/intro_docker/Worksheet.md)
+registry.docker.hub. We will then start with the [assignments](https://github.com/rvosa/arangs2016/blob/master/docs/2016-05-11/intro_docker/Worksheet.md)
 in the docker folder (and finish them after the tea break).
 
-### Session 4: Docker Machine, and Docker Commandline.  
+### Session 4: Docker Commandline.  
 
-In this part we will create our first Docker Machine, and then work with the docker commandline to
+In this part we will work with the docker commandline to
 run some of the official images hosted by the Docker Hub.  In doing so, we will learn about the following important concepts:
   - a visceral feeling for how docker is different from virtualization
   - The Docker lexicon: image and container
-  - The different kinds of Docker image
-  - docker ENV
   - The intimate relationship between the docker commandline and the hub
   - mounting locally hosted directories as docker volumes
-  - running containers as a different user than root
   - exposing ports
   - managing machines, images, and containers
-  - when the docker-machine is not so transparent
-
+  
 Requirements
 ------------
 
