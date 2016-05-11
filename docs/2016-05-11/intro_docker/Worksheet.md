@@ -45,7 +45,7 @@ with the `--volume` or `-v` command passed to `docker run`.
 
 * Look at how to share [a host directory as a data volume in the container](https://docs.docker.com/engine/userguide/containers/dockervolumes/)
 * Create a directory in your current working directory which contains a file with some text
-* Run a cat on this file specifying the above directory as shared to `docker run`
+* Run `cat` on this file specifying the above directory as shared to `docker run`
 * Create a file within the docker container that is exposed to your host machine
 
 ## Host/container communication
