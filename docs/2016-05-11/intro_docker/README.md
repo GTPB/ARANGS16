@@ -28,23 +28,14 @@ Docker images are designed to host a single application and its dependencies.  T
 
 Docker Ecosystem
 ----------------
+**Docker engine**
 
-**Docker Machine**
-
-Host systems must install and run the Docker daemon.  The daemon can only run on a modern (version created within the last 2 years) Linux Kernal.  Almost all flavors of Linux (Fedora, Redhat, Ubuntu, Debian) use the Linux Kernal, and can host the daemon on them natively.  Some flavors of \*Nix (Mac OSX in particular), do not use the Linux Kernal. They must run the docker daemon inside a VirtualMachine built on one of the Linux flavors with a modern kernal.  This can introduce a bit more complexity, but it also introduces the powerful concept of using external docker hosts 'in the cloud'.
-
-The docker daemon runs a web service in the background and listens to special ports for requests to manage docker images and containers. It provides a REST interface API that can be used by any client.  Typically, it uses an encrypted connection called TLS, which is a standard system used by many network client-server communications. TLS requires that each client generate an encrypted certificate (not the same as used by GitHub) to be used when they communicate with the service. The primary client that uses the REST interface is the docker commandline interface.
-
-The [docker-machine](https://docs.docker.com/machine) command automates the process of getting a docker host running on any computer with a supported Virtualization system (Virtualbox and VMware are supported). It makes it much easier to get Docker up and running if you do not have Systems Administration expertise.  It does this by:
-  - downloading a special VM image for a specified VM management system preconfigured to host and run the docker daemon
-  - generating TLS certificates
-  - starting and stopping the VM
-  - Providing an easy way to configure the Environment needed by the Docker commandline interface (see below)
-The docker-machine command can also be used to create docker machines on many cloud [hosting systems](https://docs.docker.com/machine/#using-docker-machine-with-a-cloud-provider), which may be attractive to those wanting to purchase more powerful compute environments than are provided by their own machine, or institution.
+The [docker engine](https://www.docker.com/products/docker-engine) is a light-weight tool that builds and runs docker containers.
+It runs under Linux and natively hosts the `docker daemon` which is the process that manages the containers as well as the docker client, which lets the user run `containers` (commands/workflows in a virtual environment). If you have root access (or your system administrator installs the docker engine), this is the easiest way to run docker applications. Note that for Windows and MacOS, the docker daemon has to run on a virtual machine itsself, which can be set up with `docker-machine` (see below). Alternatively, the [docker toolbox](https://www.docker.com/products/docker-toolbox) for Windows and MacOS installs a docker machine and a client.
 
 **Docker**
 
-The [docker commandline interface](https://docs.docker.com/reference/commandline/cli/) is written in the Go programming language.  There are versions available for every known operating system (even Windows 10!).  It is designed to interface with the Docker Machine daemon over the network using its REST interface.  By compartmentalizing the docker interface from the docker machine, it is possible to use the same docker command to interface with a docker machine running anywhere on the network.
+The [docker commandline interface](https://docs.docker.com/reference/commandline/cli/) is written in the Go programming language.  There are versions available for every known operating system (even Windows 10!).  It is designed to interface with the Docker Machine daemon or the native docker engine over the network using its REST interface.  By compartmentalizing the docker interface from the docker machine, it is possible to use the same docker command to interface with a docker machine running anywhere on the network.
 
 The client must run in the context of a special set of Environment variables:
 * DOCKER_TLS_VERIFY (1 if using TLS, default)
@@ -93,10 +84,22 @@ Docker Registry.
 - docker pull i will pull the image i down onto your host
 - docker run i will pull the image i down if it is not present, and then run a container of i
 
+**Docker Machine**
+
+Host systems must install and run the Docker daemon.  The daemon can only run on a modern (version created within the last 2 years) Linux Kernal.  Almost all flavors of Linux (Fedora, Redhat, Ubuntu, Debian) use the Linux Kernal, and can host the daemon on them natively.  Some flavors of \*Nix (Mac OSX in particular), do not use the Linux Kernal. They must run the docker daemon inside a VirtualMachine built on one of the Linux flavors with a modern kernal.  This can introduce a bit more complexity, but it also introduces the powerful concept of using external docker hosts 'in the cloud'.
+
+The docker daemon runs a web service in the background and listens to special ports for requests to manage docker images and containers. It provides a REST interface API that can be used by any client.  Typically, it uses an encrypted connection called TLS (a successor of SSL), which is a standard system used by many network client-server communications. TLS requires that each client generate an encrypted certificate (not the same as used by GitHub) to be used when they communicate with the service. The primary client that uses the REST interface is the docker commandline interface.
+
+The [docker-machine](https://docs.docker.com/machine) command automates the process of getting a docker host running on any computer with a supported Virtualization system (Virtualbox and VMware are supported). It makes it much easier to get Docker up and running if you do not have Systems Administration expertise.  It does this by:
+  - downloading a special VM image for a specified VM management system preconfigured to host and run the docker daemon
+  - generating TLS certificates
+  - starting and stopping the VM
+  - Providing an easy way to configure the Environment needed by the Docker commandline interface (see below)
+The docker-machine command can also be used to create docker machines on many cloud [hosting systems](https://docs.docker.com/machine/#using-docker-machine-with-a-cloud-provider), which may be attractive to those wanting to purchase more powerful compute environments than are provided by their own machine, or institution.
+
 Lesson Plan
 -----------
 
-- install docker-machine and docker
 - explore the Docker Registry
 - run some docker images
   - with and without docker pull

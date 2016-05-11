@@ -1,5 +1,5 @@
 ![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
-
+asdfasd
 # ARANGS 2016
 
 This is the git repository for the course *Automated and Reproducible Analysis of Next 
@@ -18,10 +18,11 @@ under the terms of the [MIT](https://github.com/rvosa/arangs2016/blob/master/LIC
 
 ## Additional reading of interest
 
-* [_A Quick Guide to Organizing Computational Biology Projects_](http://dx.doi.org/10.1371/journal.pcbi.1000424)
+* [_The Case for Cloud Computing in Genome Informatics_](http://dx.doi.org/10.1186/gb-2010-11-5-207)
 * [_A Quick Guide for Developing Effective Bioinformatics Programming Skills_](http://dx.doi.org/10.1371/journal.pcbi.1000589)
-* [_Ten Simple Rules for Managing High-Throughput Nucleotide Sequencing Data_](http://dx.doi.org/10.1101/049338)
+* [_A Quick Guide to Organizing Computational Biology Projects_](http://dx.doi.org/10.1371/journal.pcbi.1000424)
 * [_Ten Simple Rules for Taking Advantage of git and GitHub_](http://dx.doi.org/10.1101/048744)
+* [_Ten Simple Rules for Managing High-Throughput Nucleotide Sequencing Data_](http://dx.doi.org/10.1101/049338)
 * Unix Tutorials: [General intro](http://www.ee.surrey.ac.uk/Teaching/Unix/), [Bash scripting](http://tldp.org/LDP/abs/html/)
 
 <!--

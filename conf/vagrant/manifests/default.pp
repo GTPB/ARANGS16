@@ -84,8 +84,8 @@ exec {
 		require   => Exec[ 'make_samtools' ];
 
     # clone arangs2016 repository
-     'clone_arangs2016':
-        command   => 'git clone https://github.com/vmixao/arangs2016.git',
+    'clone_arangs2016':
+        command   => 'git clone https://github.com/rvosa/arangs2016.git',
         cwd       => '/home/vagrant',
         creates   => '/home/vagrant/arangs2016',
         require   => Package[ 'git' ];
