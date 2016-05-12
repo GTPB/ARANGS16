@@ -2,9 +2,9 @@ docker-compose
 --------------
 
 - Have a look at [this YAML file](https://github.com/rvosa/arangs2016/blob/master/docker-compose.yml).
-- How many build contexts are there? 
+- How many build contexts are there? _3_
 - Where are the build contexts relative to the YAML file?
-- If you do a docker-compose build from this YAML file, how many Docker images will be created?
+- If you do a docker-compose build from this YAML file, how many Docker images will be created? _4_
 - Why does line 4 start with a dash `-`? What does this mean in YAML syntax (look it up)? How would the 
   equivalent concept be expressed in JSON? What does this imply about the `volumes` setting?
 - How many different syntaxes/notations have we so far looked at this week?
