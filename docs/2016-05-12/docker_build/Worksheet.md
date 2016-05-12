@@ -7,7 +7,6 @@ Add this file to the resulting image at /etc/info.txt
 * Run another container of your image, but instead of running 'bash', run 'cat /etc/info.txt'
 * add a CMD to cat the contents of /etc/info.txt
 * Run a container of your image without any command
-* create a docker-compose.yml file in the build context directory.  Have it build the current directory (.), and run 'echo FOO' as the command. Build it and run it with docker-compose.
 * (Bonus) save a tar file of the docker image on your file system (run docker without any arguments for a hint).  Use scp to share your image with your neighbor (e.g. if your neighbor machine is t3, use the following to copy your_image.tar to their home directory):
 ```bash
 $ scp t3:your_image.tar
