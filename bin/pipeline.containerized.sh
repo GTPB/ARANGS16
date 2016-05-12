@@ -7,8 +7,8 @@
 DATA=/arangs/data
 
 # We define the invocation once and just refer to them later
-BWA="docker run -v /home/participant/arangs2016:/arangs ubungs bwa"
-SAMTOOLS="docker run -v /home/participant/arangs2016:/arangs ubungs samtools"
+BWA="docker run -v /home/participant/arangs2016:/arangs docker_bwa"
+SAMTOOLS="docker run -v /home/participant/arangs2016:/arangs docker_samtools"
 
 # Here we define the number of cores we will use for the calculations. Perhaps we may need
 # to modify this depending on the configuration of our VM
