@@ -9,4 +9,4 @@ docker-compose
   By which path would it be reachable in the container?
 - Have a look at [the other yaml file](https://github.com/rvosa/arangs2016/blob/master/docker-compose-data.yml)
 - How many build contexts does it have? Do they all build tools, or is something else going on?
-- What do you think the `volumes_from` directive does?
+- What do you think the `volumes_from` directive does? <!-- https://docs.docker.com/compose/compose-file/#volumes-from -->
