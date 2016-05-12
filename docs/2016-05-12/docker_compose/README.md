@@ -5,7 +5,7 @@ Docker-Compose
 
 The [docker-compose](https://docs.docker.com/compose/) command is a helpful system to use to automate building and running multiple, related docker build contexts. It is a thin wrapper around the docker command istself. Once installed on your system, it can be run in any directory containing a yaml file called docker-compose.yml (you can also override this and specify a path to a different yaml file using the -f flag to docker-compose). You can put one in the root of your project to specify how to build and run all of the images that are required to run your pipeline.
 
-The docker-compose.yml file is a YAML file (Yet Another Markup Language). YAML is designed to be parsed into simple data structures in any programming language. A docker-compose.yml should specify a Hash that specifies one or more keys, called called 'services'.  Each service must specify a Hash of one or more arguments that tell docker-compose how to build or run the image for each service.
+The docker-compose.yml file is a [YAML](http://yaml.org) file (YAML Ain't Markup Language). YAML is designed to be parsed into simple data structures in any programming language. A docker-compose.yml should specify a Hash that specifies one or more keys, called called 'services'.  Each service must specify a Hash of one or more arguments that tell docker-compose how to build or run the image for each service.
 
 ```yaml
 service:
