@@ -5,7 +5,8 @@ docker-compose
 - How many build contexts are there? 
 - Where are the build contexts relative to the YAML file?
 - If you do a docker-compose build from this YAML file, how many Docker images will be created?
-- Why does line 4 start with a dash `-`? What does this mean in YAML syntax (look it up)? What does this imply about volumes?
+- Why does line 4 start with a dash `-`? What does this mean in YAML syntax (look it up)? How would the 
+  equivalent concept be expressed in JSON? What does this imply about the `volumes` setting?
 - How many different syntaxes/notations have we so far looked at this week?
 - If you run one of these containers inside home (`~/`), would your invisible `.ssh` directory be accessible in the container? 
   By which path would it be reachable in the container?
