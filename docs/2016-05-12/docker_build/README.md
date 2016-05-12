@@ -110,6 +110,7 @@ The [docker-compose](https://docs.docker.com/compose/) command is a helpful syst
 
 The docker-compose.yml file is a YAML file (Yet Another Markup Language). YAML is designed to be parsed into simple data structures in any programming language. A docker-compose.yml should specify a Hash that specifies one or more keys, called called 'services'.  Each service must specify a Hash of one or more arguments that tell docker-compose how to build or run the image for each service.
 
+```yaml
 service:
   argument1: value
   argument2: value
@@ -119,6 +120,7 @@ service2:
   argument2: value
   ...
 ...
+```
 
 service arguments are specified in the [docker-compose.yml documentation](https://docs.docker.com/compose/yml/).  They are very similar to docker arguments:
 
