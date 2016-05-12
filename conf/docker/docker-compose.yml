@@ -1,0 +1,19 @@
+bwa:
+  build: bwa
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: bwa
+  command: ''
+samtools:
+  build: samtools
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: samtools
+gzip:
+  build: samtools
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: gzip
