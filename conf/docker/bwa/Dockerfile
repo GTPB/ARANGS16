@@ -16,4 +16,4 @@ RUN ./install_bwa.sh
 # this creates a default command that gets
 # run when the container is run without arguments
 # it will print the usage + version of bwa and exit
-CMD bwa
+ENTRYPOINT ["bwa"]
