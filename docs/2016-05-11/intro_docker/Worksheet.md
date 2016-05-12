@@ -1,6 +1,9 @@
 Getting started with the `Docker` command-line interface
 -------------------------
-There are many _images_ with different OS and software available  in docker registries (e.g. [https://hub.docker.com/explore/](docker-hub)). We will start with downloading the tiny UNIX based operating system Busybox. Pull the 'busybox' image from the Docker hub. 
+For basic information, please also refer to the [docker documentation](https://docs.docker.com), for instance the [quickstart tutorial on docker engine] or a [hello world example](https://docs.docker.com/engine/userguide/containers/dockerizing/). 
+There are many _images_ with different OS and software available  in docker registries (e.g. [docker-hub](https://hub.docker.com/explore/)). We will start with downloading the tiny UNIX based operating system Busybox. Pull the 'busybox' image from the Docker hub. 
+
+
 
 ## Listing available images and containers
 To keep track of your images and containers, docker offers the subcommands `docker images` and `docker ps`.
@@ -40,9 +43,9 @@ image that the container is instanciated from. It is very worthwile to browse th
 Of course, one wants to share data between the host environment and the running container. This is easily possible
 with the `--volume` or `-v` command passed to `docker run`.
 
-* Look at how to share [https://docs.docker.com/engine/userguide/containers/dockervolumes/](a host directory as a data volume in the container)
+* Look at how to share [a host directory as a data volume in the container](https://docs.docker.com/engine/userguide/containers/dockervolumes/)
 * Create a directory in your current working directory which contains a file with some text
-* Run a cat on this file specifying the above directory as shared to `docker run`
+* Run `cat` on this file specifying the above directory as shared to `docker run`
 * Create a file within the docker container that is exposed to your host machine
 
 ## Host/container communication

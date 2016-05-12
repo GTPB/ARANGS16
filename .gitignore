@@ -2,11 +2,6 @@
 *fastq*
 *bwa*
 *samtools*
-*.vagrant*
 *~
-*debian*
-*.deb
-*.zip
-*.save
+*.vagrant*
 *packer*
-.gitignore

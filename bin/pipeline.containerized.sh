@@ -4,8 +4,11 @@
 
 # Here we define where our data reside. Perhaps we may need to modify this depending on
 # how we run the pipeline.
-#DATA=../data
-DATA=/vagrantdata
+DATA=/arangs/data
+
+# We define the invocation once and just refer to them later
+BWA="docker run -v /home/participant/arangs2016:/arangs ubungs bwa"
+SAMTOOLS="docker run -v /home/participant/arangs2016:/arangs ubungs samtools"
 
 # Here we define the number of cores we will use for the calculations. Perhaps we may need
 # to modify this depending on the configuration of our VM
@@ -27,7 +30,7 @@ if [ ! -e $REFERENCE.bwt ]; then
 	# while "-a is" and "-a div" do not work for long
 	# genomes. Please choose "-a" according to the length
 	# of the genome.
-	bwa index -a bwtsw $REFERENCE
+	$BWA index -a bwtsw $REFERENCE
 else
 	echo "$REFERENCE already indexed"
 fi
@@ -52,48 +55,47 @@ for FASTQ in $FASTQS; do
 
 	# note: we don't do basic QC here, because that might mean
 	# that the mate pairs in the FASTQ files go out of order,
-	# which will result in the bwa sampe step taking an inordinate
+	# which will result in the $BWA sampe step taking an inordinate
 	# amount of time
 
-	# do bwa aln if needed
+	# do $BWA aln if needed
 	if [ ! -e $OUTFILE ]; then
 		echo "going to align $FASTQ against $REFERENCE"
 
 		# use $CORES threads
-		bwa aln -t $CORES $REFERENCE $FASTQ > $OUTFILE
+		$BWA aln -t $CORES $REFERENCE $FASTQ -f $OUTFILE
 	else
 		echo "alignment $OUTFILE already created"
 	fi
 done
 
-# do bwa sampe if needed
+# do $BWA sampe if needed
 if [ ! -e $SAM ]; then
 
 	# create paired-end SAM file
-	echo "going to run bwa sampe $FASTA $SAIS $FASTQS > $SAM"
-	bwa sampe $REFERENCE $SAIS $FASTQS > $SAM
+	echo "going to run $BWA sampe $FASTA $SAIS $FASTQS -f $SAM"
+	$BWA sampe $REFERENCE $SAIS $FASTQS -f $SAM
 else
 	echo "sam file $SAM already created"
 fi
 
-# do samtools filter if needed
+# do $SAMTOOLS filter if needed
 if [ ! -e $SAM.filtered ]; then
 	# -bS   = input is SAM, output is BAM
 	# -F 4  = remove unmapped reads
 	# -q 50 = remove reads with mapping qual < 50
-	echo "going to run samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered"
-	samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered
-	gzip -9 $SAM
+	echo "going to run $SAMTOOLS view -bS -F 4 -q 50 $SAM -o $SAM.filtered"
+	$SAMTOOLS view -bS -F 4 -q 50 $SAM -o $SAM.filtered
 else
 	echo "sam file $SAM.filtered already created"
 fi
 
-# do samtools sorting if needed
+# do $SAMTOOLS sorting if needed
 if [ ! -e $SAM.sorted.bam ]; then
 
 	# sorting is needed for indexing
-	echo "going to run samtools sort $SAM.filtered $SAM.sorted"
-	samtools sort $SAM.filtered $SAM.sorted
+	echo "going to run $SAMTOOLS sort $SAM.filtered $SAM.sorted"
+	$SAMTOOLS sort $SAM.filtered $SAM.sorted
 else
 	echo "sam file $SAM.sorted already created"
 fi
@@ -102,8 +104,8 @@ fi
 if [ ! -e $SAM.sorted.bam.bai ]; then
 
 	# this should result in faster processing
-	echo "going to run samtools index $SAM.sorted.bam"
-	samtools index $SAM.sorted.bam
+	echo "going to run $SAMTOOLS index $SAM.sorted.bam"
+	$SAMTOOLS index $SAM.sorted.bam
 else
 	echo "BAM file index $SAM.sorted.bam.bai already created"
 fi

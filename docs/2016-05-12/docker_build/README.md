@@ -11,7 +11,7 @@ You create a Docker image in a fashion similar to the way you create a Vangrant 
 
 This directory is called the build context for your image.  Once you have a build context, you use the docker commandline tool to build an image from the build context, with a name and optional tag.
 ```bash
-$ docker build name[:tag] /path/to/build_context
+$ docker build -t name[:tag] /path/to/build_context
 ```
 
 Dockerfile
@@ -89,7 +89,7 @@ When an ENTRYPOINT is defined in a Dockerfile, CMD changes its behavior.  Instea
 
 Given the Dockerfile
 ```
-FROM ubuntu:trust
+FROM ubuntu:trusty
 ENTRYPOINT echo
 CMD ["hello world"]
 ```

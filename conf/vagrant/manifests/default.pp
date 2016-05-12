@@ -83,13 +83,16 @@ exec {
 		creates   => '/usr/local/bin/samtools',       
 		require   => Exec[ 'make_samtools' ];
 
-        # clone github repository
-        'cl_gihub':
-                command   => 'git clone https://github.com/rvosa/arangs2016.git',
-                cwd       => '/home/vagrant/',
-                creates   => '/home/vagrant/arangs2016',
-                require   => Package[ 'git' ];
-   
+    # clone arangs2016 repository
+    'clone_arangs2016':
+        command   => 'git clone https://github.com/rvosa/arangs2016.git',
+        cwd       => '/home/vagrant',
+        creates   => '/home/vagrant/arangs2016',
+        require   => Package[ 'git' ];
+    'chown_arangs2016':
+        command   => 'chown -R vagrant:vagrant /home/vagrant/arangs2016',
+        cwd       => '/home/vagrant',
+        require   => Exec[ 'clone_arangs2016' ];
 }
 
 
