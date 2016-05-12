@@ -124,18 +124,21 @@ service2:
 
 service arguments are specified in the [docker-compose.yml documentation](https://docs.docker.com/compose/yml/).  They are very similar to docker arguments:
 
-  image: unbuntu:trusty says launch the ubuntu:trusty image for
-  this service
+-  `image: unbuntu:trusty` - says launch the ubuntu:trusty image for this service
+- `build: path_to_build_context` - says build this build context into an image named 
+  by joining the directory within which the docker-compose.yml is contained with an 
+  underscore '\_' and the service name.
+- `command:` - command argument argument says run the command and optional arguments 
+  on the container.  Note, this behaves just like specifying a command in the docker 
+  run syntax, so the command will behave differently if the Dockerfile for the image 
+  has an ENTRYPOINT.
+- `entrypoint:` - command says use this entrypoint, even if the Dockerfile for the 
+  image has an ENTRYPOINT.
+- `workdir:` path sets the WORKDIR for the running container to path, even if the 
+  Dockerfile for the image has specified a WORKDIR.
 
-  build: path_to_build_context says build this build_context into an image named by joining the directory within which the docker-compose.yml is contained with an underscore '\_' and the service name.
-
-  command: command argument argument says run the command and optional arguments on the container.  Note, this behaves just like specifying a command in the docker run syntax, so the command will behave differently if the Dockerfile for the image has an ENTRYPOINT.
-
-  entrypoint: command says use this entrypoint, even if the Dockerfile for the image has an ENTRYPOINT.
-
-  workdir: path sets the WORKDIR for the running container to path, even if the Dockerfile for the image has specified a WORKDIR.
-
-Once you have a docker-compose.yml file, you can use docker-compose to build and run any/all services specified in it.
+Once you have a docker-compose.yml file, you can use docker-compose to build and run 
+any/all services specified in it.
 
 Build your service (the service MUST have a build argument):
 ```bash
