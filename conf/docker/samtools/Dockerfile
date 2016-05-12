@@ -18,4 +18,4 @@ RUN ./install_samtools.sh
 # this creates a default command that gets
 # run when the container is run without arguments
 # it will print the usage + version of samtools and exit
-CMD samtools
+ENTRYPOINT ["samtools"]
