@@ -18,7 +18,7 @@ Docker
 ------
 
 - Docker build contexts
-- Dockerfile syntax
+- [Dockerfile](https://docs.docker.com/v1.8/reference/builder/) syntax
 - 'docker-compose'
 - Creating a data distribution image that makes our data easily accessible
   to our application images using --volumes-from
