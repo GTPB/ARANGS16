@@ -89,7 +89,7 @@ When an ENTRYPOINT is defined in a Dockerfile, CMD changes its behavior.  Instea
 
 Given the Dockerfile
 ```
-FROM ubuntu:trust
+FROM ubuntu:trusty
 ENTRYPOINT echo
 CMD ["hello world"]
 ```
