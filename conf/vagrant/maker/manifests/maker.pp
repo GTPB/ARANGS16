@@ -2,7 +2,7 @@
 exec {
 
 	# install maker
-	# do me as $facter variable
+	# do me as facter variable $maker
 	'dl_maker':
 		command   => 'wget http://yandell.topaz.genetics.utah.edu/maker_downloads/D92C/8CA5/6529/E03F01572C356C5221A6AE0DDF9C/maker-2.31.8.tgz',
 		cwd       => '/usr/local/src',
