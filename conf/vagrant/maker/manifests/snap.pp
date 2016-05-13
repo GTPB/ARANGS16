@@ -19,6 +19,8 @@ exec {
         cwd       => '/usr/local/src/snap',
         creates   => '/usr/local/src/snap/snap',
         require   => [ Exec[ 'untar_SNAP' ], Package[ 'build-essential' ] ];
+    
+    # XXX make symlink
     'export_SNAP':
         command   => 'echo "export PATH=/usr/local/src/snap:$PATH" >> .bashrc',
         cwd       => '/home/vagrant',
