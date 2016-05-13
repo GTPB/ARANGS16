@@ -48,5 +48,9 @@ exec {
         command   => 'ln -s /usr/local/src/snap/snap /usr/local/bin/snap',
         creates   => '/usr/local/bin/snap',
         require   => Exec[ 'make_SNAP' ];
+    'symlink_ZOE':
+        command   => 'ln -s /usr/local/src/snap/ZOE /usr/local/bin/ZOE',
+        creates   => '/usr/local/bin/ZOE',
+        require   => Exec[ 'make_SNAP' ];
 
 }
