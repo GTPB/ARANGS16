@@ -6,11 +6,25 @@ Sharing automated, reproducible NGS analyses
 --------------------------------------------
 *2016-05-13*
 
-On this last day we will tie review the concepts of autamating workflows with the
+On this last day we will review the concepts of autamating workflows with the
 tools presented in this course. We will in particular compare the virtualization 
 tools _Docker_ and _Vagrant_ and their advantages/disadvantages for particular problems.
 After the coffe break, we will again do _hands-on_ training and extend the pipeline that we 
 developed last week to include genotype calling.
+
+### Docker vs. Vagrant
+
+Docker  | Vagrant
+--- | ---
+lightweight | entire OS
+linux dependent | standalone
+requires `docker` | requires `docker` and `vagrant`
+docker language | uses ruby
+invoke tools from outside | log in on environment
+  | deploy on grid
+resource efficient  | less so due to virtualization
+works on MPI cluster  | not so much
+docker hub  | vagrant cloud
 
 Schedule
 --------
