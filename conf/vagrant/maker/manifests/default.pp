@@ -9,6 +9,9 @@ Exec {
 	]
 }
 
+# disable timeout for all provisioning operations
+Exec { timeout => 0 }
+
 # keep package information up to date
 exec {
 	"apt_update":
@@ -25,7 +28,7 @@ package {
 	"gzip":            ensure => installed, require => Exec ["apt_update"];
 	"zlib1g-dev":      ensure => installed, require => Exec ["apt_update"];
 	"ncurses-dev":     ensure => installed, require => Exec ["apt_update"];
-    "perl":            ensure => installed, require => Exec ["apt_update"];
+	"perl":            ensure => installed, require => Exec ["apt_update"];
 }
 
 import 'perl-prereq.pp'
