@@ -63,7 +63,6 @@ https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_Cx
 
 * samtools http://samtools.sourceforge.net/
 * bwa http://bio-bwa.sourceforge.net/
-* fastqc http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 ### Docker, docker-machine, docker-compose
 
