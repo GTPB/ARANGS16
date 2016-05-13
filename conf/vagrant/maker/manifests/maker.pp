@@ -24,12 +24,12 @@ exec {
 
     # add default EDITOR environment variable
     "make_editor_sh_ZOE":
-	    command   => "sudo echo 'export PATH=/usr/local/src/snap/Zoe:$PATH' >  /etc/profile.d/add_ZOE.sh",
+	    command   => "echo 'export PATH=/usr/local/src/snap/Zoe:$PATH' >  /etc/profile.d/add_ZOE.sh",
 	    cwd       => "/etc/profile.d",
 	    creates   => "/etc/profile.d/add_ZOE.sh";	
 
     "make_editor_sh_PATH":
-	    command => "sudo echo 'export PATH=/usr/local/src/maker/bin:$PATH' >  /etc/profile.d/add_maker.sh",
+	    command => "echo 'export PATH=/usr/local/src/maker/bin:$PATH' >  /etc/profile.d/add_maker.sh",
 	    cwd     => "/etc/profile.d",
 	    creates => "/etc/profile.d/add_maker.sh";
 }
