@@ -9,6 +9,9 @@ Exec {
 	]
 }
 
+# disable timeout for all provisioning operations
+Exec { timeout => 0 }
+
 # keep package information up to date
 exec {
 	"apt_update":
