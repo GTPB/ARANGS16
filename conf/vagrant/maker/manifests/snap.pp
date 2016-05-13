@@ -1,32 +1,3 @@
-# update the $PATH environment variable
-Exec {
-  path => [
-		"/usr/local/sbin",
-		"/usr/local/bin",
-		"/usr/sbin",
-		"/usr/bin",
-		"/sbin",
-		"/bin",
-	]
-}
-
-# keep package information up to date
-exec {
-	"apt_update":
-	command => "/usr/bin/apt-get update"
-}
-
-
-
-package {
-    "wget":            ensure => installed, require => Exec ["apt_update"];
-    "tar":             ensure => installed, require => Exec ["apt_update"];
-    "gzip":            ensure => installed, require => Exec ["apt_update"];
-	"build-essential": ensure => installed, require => Exec ["apt_update"];	
-}
-
-
-
 exec {
 
     'dl_SNAP':

@@ -1,32 +1,3 @@
-# update the $PATH environment variable
-Exec {
-  path => [
-		"/usr/local/sbin",
-		"/usr/local/bin",
-		"/usr/sbin",
-		"/usr/bin",
-		"/sbin",
-		"/bin",
-	]
-}
-
-# keep package information up to date
-exec {
-	"apt_update":
-	command => "/usr/bin/apt-get update"
-}
-
-# install packages.
-package {
-	"wget":            ensure => installed, require => Exec["apt_update"]; # to fetch cpanm
-	"bzip2":           ensure => installed, require => Exec["apt_update"]; # to unzip archives
-	"tar":             ensure => installed, require => Exec["apt_update"]; # ,,
-	"gzip":            ensure => installed, require => Exec["apt_update"]; # ,,
-	"git":             ensure => installed, require => Exec["apt_update"]; # to fetch bioperl
-	"build-essential": ensure => installed, require => Exec["apt_update"]; # to compile things
-    "perl":            ensure => installed, require => Exec["apt_update"]; # probably already there
-}
-
 # command line tasks
 exec {
 	    # set locale to US english to get rid of annoying perl warnings
