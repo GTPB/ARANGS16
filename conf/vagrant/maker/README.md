@@ -1,0 +1,6 @@
+- Exonerate: Miguel
+- Snap: Jesse
+- Perl: Rutger
+- NCBI blast: Jordi
+- Repeatmasker: Dina
+- MAKER: Veronica & Andrea
