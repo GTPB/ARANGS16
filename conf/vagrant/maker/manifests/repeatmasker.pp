@@ -1,8 +1,8 @@
 # command line tasks
 exec {
-    	# Download RepeatMasker
+    # Download RepeatMasker
 	'repM':
-	command   => 'wget http://www.repeatmasker.org/RepeatMasker-open-4-0-6.tar.gz',
+	command   => 'wget -O RepeatMasker-open-4-0-6.tar.gz http://www.repeatmasker.org/RepeatMasker-open-4-0-6.tar.gz',
         cwd       => '/home/vagrant',
 	require   => Package[ 'wget' ];	
 	
@@ -12,6 +12,7 @@ exec {
 	require   => [ Exec[ 'repM' ], Package[ 'tar' ] ];
 
 	# get trf
+    # XXX do this using a facter variable $trf
 	'trf':
 	command   => 'wget -O trf http://rvosa.github.io/arangs2016/downloads/arangs2016-trf.bin',
         cwd       => '/home/vagrant',
@@ -49,6 +50,7 @@ exec {
 	require   => Exec[ 'unzip_rmblast' ];
 
 	# download  Blast
+    # XXX not necessary, done previously
 	'dl_blast':
 	command   => 'wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.28/ncbi-blast-2.2.28+-x64-linux.tar.gz', 
         cwd       => '/home/vagrant',   
@@ -70,17 +72,19 @@ exec {
         cwd       => '/usr/local/RepeatMasker',
 	require   => Exec[ 'mv_folder' ];
 
-    	# configure RepeatMasker
+    # configure RepeatMasker
 	'conf':
 	command   => 'perl ./configure < answers.txt',
         cwd       => '/usr/local/RepeatMasker',
 	require   => Exec[ 'mv_folder' ];
 
+    # XXX do this in a global shell config file
 	'addPATH':
 	command   => 'echo "export PATH=/usr/local/RepeatMasker:$PATH" >> .bashrc',
         cwd       => '/home/vagrant';
 
 	# download Repbase repeat database
+    # XXX do this as a facter $repbase variable
 	'db':
 	command   => 'wget http://rvosa.github.io/arangs2016/downloads/repeatmaskerlibraries-20150807.tar.gz',    
         cwd       => '/usr/local/RepeatMasker',
