@@ -17,7 +17,7 @@ exec {
 		cwd       => '/usr/local/src/maker/src',
 		require   => [Exec[ 'unzip_maker' ], Package[ 'perl' ] ];
 	'install_maker':
-		command   => './Build install',
+		command   => 'perl Build install',
 		cwd       => '/usr/local/src/maker/src',       
 		require   => Exec[ 'conf_maker' ];
 
