@@ -38,7 +38,7 @@ exec {
 		require => Package['wget'];
 
         "perl-bioperl-live":
-		command => "cpanm --notest git://github.com/bioperl/bioperl-live.git@v1.6.x",
+		command => "cpanm --notest https://github.com/bioperl/bioperl-live.git@v1.6.x",
 		require => Exec['perl-cpanm'];
         
         "perl-DBI":
