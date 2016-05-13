@@ -13,7 +13,7 @@ exec {
 
 	# get trf
 	'trf':
-	command   => 'wget -O trf http://biovel.naturalis.nl/arangs2016-trf.bin',
+	command   => 'wget -O trf http://rvosa.github.io/arangs2016/downloads/arangs2016-trf.bin',
         cwd       => '/home/vagrant',
 	require   => Package[ 'wget' ];	
 	
