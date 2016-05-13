@@ -10,18 +10,19 @@ exec {
         cwd       => '/usr/local/src',
         creates   => '/usr/local/src/snap',
         require   => [ Exec[ 'dl_SNAP' ], Package[ 'tar' ] ];
+    'export_ZOE':
+        command   => 'echo "export ZOE=/usr/local/src/snap/ZOE" >> .bashrc',
+        cwd       => '/home/vagrant',
+        require   => Exec[ 'untar_SNAP' ];
     'make_SNAP':
         command   => 'make',
         cwd       => '/usr/local/src/snap',
         creates   => '/usr/local/src/snap/snap',
-        require   => Exec[ 'untar_SNAP' ];
-    'symlink_SNAP':
-        command   => 'ln -s /usr/local/src/snap/snap /usr/local/bin/snap',
-        creates   => '/usr/local/bin/snap',
+        require   => [ Exec[ 'untar_SNAP' ], Package[ 'build-essential' ] ];
+    'export_SNAP':
+        command   => 'echo "export PATH=/usr/local/src/snap:$PATH" >> .bashrc',
+        cwd       => '/home/vagrant',
         require   => Exec[ 'make_SNAP' ];
-    'symlink_ZOE':
-        command   => 'ln -s /usr/local/src/snap/ZOE /usr/local/bin/ZOE',
-        creates   => '/usr/local/bin/ZOE',
-        require   => Exec[ 'make_SNAP' ];
+
 
 }

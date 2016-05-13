@@ -32,3 +32,5 @@ import 'perl-prereq.pp'
 import 'ncbi.pp'
 import 'snap.pp'
 import 'exonerate.pp'
+import 'maker.pp'
+
