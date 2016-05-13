@@ -29,6 +29,12 @@ package {
 
 # command line tasks
 exec {
+	    # set locale to US english to get rid of annoying perl warnings
+	    "set_locale_sh":
+	    command => "echo 'export LC_ALL=en_US.UTF-8' > set_locale.sh",
+	    cwd     => "/etc/profile.d",
+	    creates => "/etc/profile.d/set_locale.sh";
+
 	    # install perl dependency libraries, starting with the cpanm package
         # manager. According to the MAKER install instructions, BioPerl needs 
         # to come from github because the CPAN version is outdated. The other 
@@ -38,7 +44,7 @@ exec {
 		require => Package['wget'];
 
         "perl-bioperl-live":
-		command => "cpanm --notest https://github.com/bioperl/bioperl-live.git@v1.6.x",
+		command => "cpanm --notest --force https://github.com/bioperl/bioperl-live.git@v1.6.x",
 		require => Exec['perl-cpanm'];
         
         "perl-DBI":
