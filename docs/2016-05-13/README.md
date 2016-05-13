@@ -16,12 +16,13 @@ developed last week to include genotype calling.
 
 Docker  | Vagrant
 --- | ---
+potential security nightmare | sandboxed
 lightweight | entire OS
 linux dependent | standalone
-requires `docker` | requires `docker` and `vagrant`
+requires `docker` | requires `virtualbox` and `vagrant`
 docker language | uses ruby
 invoke tools from outside | log in on environment
-  | deploy on grid
+??? | deploy on grid
 resource efficient  | less so due to virtualization
 works on MPI cluster  | not so much
 docker hub  | vagrant cloud
