@@ -25,7 +25,7 @@ package {
 	"gzip":            ensure => installed, require => Exec ["apt_update"];
 	"zlib1g-dev":      ensure => installed, require => Exec ["apt_update"];
 	"ncurses-dev":     ensure => installed, require => Exec ["apt_update"];
-    "perl":            ensure => installed, require => Exec ["apt_update"];
+	"perl":            ensure => installed, require => Exec ["apt_update"];
 }
 
 import 'perl-prereq.pp'
