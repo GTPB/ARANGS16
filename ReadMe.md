@@ -1,20 +1,19 @@
-![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
+## ARANGS15 - Automated and reproducible analysis of NGS data
 
-# ARANGS 2016
+###  Instituto Gulbenkian de Ciência (IGC) - Oeiras, Portugal - May 9<sup>th</sup> - May 13<sup>th</sup> 2016
 
-This is the git repository for the course *Automated and Reproducible Analysis of Next 
-Generation Sequencing data* (ARANGS16). This course is organized by 
-[Pedro Fernandes](https://github.com/pfern) and taught by [Darin London](https://github.com/dmlond),
-[Hannes Hettling](http://github.com/hettling) and [Rutger Vos](https://github.com/rvosa) under the 
-auspices of the [Gulbenkian Training Programme in Bioinformatics](http://gtpb.igc.gulbenkian.pt/bicourses/)
-in Oeiras, Portugal.
+---
 
-* [Course Homepage](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16)
-* [Course Timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS16/timetable.html)
+#### Co-Authorship
 
-This repository contains source code, data, configuration files, documentation and
-reference materials. Unless indicated otherwise, all these materials can be reused
-under the terms of the [MIT](https://github.com/rvosa/arangs2016/blob/master/LICENSE) license.
+The following co-authors contributed to the development of the training material.
+
+* [Rutger Vos](https://github.com/rvosa)
+* [Darin London](https://github.com/dmlond)
+* [Hannes Hettling](https://github.com/hettling)
+
+#### Course Webpage
+This is the link to the [course webpage](http://gtpb.igc.gulbenkian.pt/bicourses/2016/ARANGS16/), for further information about the course.
 
 ## Additional reading of interest
 
@@ -74,3 +73,7 @@ https://docs.google.com/document/pub?id=1rYbBPELjjezRVjkQfkulJI2jNxL5LsRuNXVv_Cx
 
 * vagrant http://vagrantup.com
 * virtualbox http://virtualbox.org
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ARANGS16</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">GTPB</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
